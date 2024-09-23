@@ -69,11 +69,6 @@ var req_body = protobuf.Message{
    2: {
       protobuf.Message{
          2: {protobuf.Bytes("40wkJJXfwQ0")},
-         
-         5:  {protobuf.Varint(0)},
-         8:  {protobuf.Varint(0)},
-         23: {protobuf.Bytes("Fb3SDK0qUXpDTg48")},
-         26: {protobuf.Bytes("")},
          27: {
             protobuf.Message{
                1: {
@@ -88,6 +83,7 @@ var req_body = protobuf.Message{
                },
             },
          },
+         
          28: {protobuf.Unknown{
             protobuf.Bytes("\b\x00\x10\x00\x18\x00"),
             protobuf.Message{
