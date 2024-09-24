@@ -11,21 +11,14 @@ import (
 )
 
 func main() {
-   m := protobuf.Message{}
-   m.Add(1, func(m protobuf.Message) {
-      m.Add(1, func(m protobuf.Message) {
-         m.AddVarint(16, 3)
-         m.AddBytes(17, []byte("19.33.35"))
-      })
-   })
-   m := protobuf.Message{
+   message := protobuf.Message{
       1: {protobuf.Message{
          1: {protobuf.Message{
             16: {protobuf.Varint(3)},
             17: {protobuf.Bytes("19.33.35")},
          }},
       }},
-   }
+   }.Marshal()
    var req http.Request
    req.Header = http.Header{}
    req.Method = "POST"
@@ -37,7 +30,6 @@ func main() {
    req.URL.Scheme = "https"
    req.Header["Content-Type"] = []string{"application/x-protobuf"}
    req.Body = io.NopCloser(bytes.NewReader(req_body.Marshal()))
-   time.Sleep(time.Second)
    resp, err := http.DefaultClient.Do(&req)
    if err != nil {
       panic(err)
