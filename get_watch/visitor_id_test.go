@@ -6,11 +6,10 @@ import (
 )
 
 func TestVisitorId(t *testing.T) {
-   visitor, err := visitor_id()
+   var visitor visitor_id
+   err := visitor.New()
    if err != nil {
       t.Fatal(err)
    }
-   visitor, _ = visitor.Get(1)()
-   id, _ := visitor.GetBytes(2)()
-   fmt.Println(string(id))
+   fmt.Println(visitor.id())
 }

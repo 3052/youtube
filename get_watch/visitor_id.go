@@ -7,7 +7,13 @@ import (
    "net/http"
 )
 
-func visitor_id() (protobuf.Message, error) {
+func (v visitor_id) id() (string, bool) {
+   m, _ := v.message.Get(1)()
+   b, ok := m.GetBytes(2)()
+   return string(b), ok
+}
+
+func (v *visitor_id) New() error {
    message := protobuf.Message{
       1: {protobuf.Message{
          1: {protobuf.Message{
@@ -21,17 +27,17 @@ func visitor_id() (protobuf.Message, error) {
       "application/x-protobuf", bytes.NewReader(message.Marshal()),
    )
    if err != nil {
-      return nil, err
+      return err
    }
    defer resp.Body.Close()
    data, err := io.ReadAll(resp.Body)
    if err != nil {
-      return nil, err
+      return err
    }
-   message = protobuf.Message{}
-   err = message.Unmarshal(data)
-   if err != nil {
-      return nil, err
-   }
-   return message, nil
+   v.message = protobuf.Message{}
+   return v.message.Unmarshal(data)
+}
+
+type visitor_id struct {
+   message protobuf.Message
 }
