@@ -3,15 +3,17 @@ package youtube
 import (
    "154.pages.dev/protobuf"
    "bytes"
-   "fmt"
+   "errors"
    "io"
    "net/http"
-   "net/url"
-   "time"
 )
 
-func (v visitor_id) get_watch() (protobuf.Message, error) {
-   var Request = protobuf.Message{
+type get_watch struct {
+   message protobuf.Message
+}
+
+func (v visitor_id) watch() (*get_watch, error) {
+   data := protobuf.Message{
       1: {protobuf.Message{ // keep
          1: {protobuf.Message{ // keep
             16: {protobuf.Varint(3)},
@@ -31,33 +33,50 @@ func (v visitor_id) get_watch() (protobuf.Message, error) {
             }},
          }},
       }},
-   }
-   id, err := v.id()
+   }.Marshal()
+   req, err := http.NewRequest(
+      "POST", "https://youtubei.googleapis.com/youtubei/v1/get_watch",
+      bytes.NewReader(data),
+   )
    if err != nil {
       return nil, err
    }
-   req.URL.Path = "/youtubei/v1/get_watch"
-   req.Method = "POST"
-   req.URL.Host = "youtubei.googleapis.com"
-   req.URL.Scheme = "https"
-   req.Body = io.NopCloser(bytes.NewReader(Request.Marshal()))
-   req.Header["Content-Type"] = []string{"application/x-protobuf"}
-   req.Header["x-goog-visitor-id"] = []string{""}
-   resp, err := http.DefaultClient.Do(&req)
+   // pass
+   // youtube android 1
+   id := "Cgt0OV94ZHc0Q1hnQSjUja-2BjIKCgJVUxIEGgAgTzoMCAEgwKfTncLa8eVm"
+   // fail
+   // youtube android 2
+   //id := "Cgt1TFh6dDNWSlJUMCipha-2BjIKCgJVUxIEGgAgTjoMCAEgoJa1uZbV8OVm"
+   // fail
+   // youtube android 3
+   //id := "CgtWNDRiYlFEdE1BayiQv662BjIKCgJVUxIEGgAgVDoMCAEgjZiKyITy5-Vm"
+   // fail
+   // youtube android 4
+   //id := "CgtzZjI3dkR5Z0VSVSjGla22BjIKCgJVUxIEGgAgYzoMCAEgtO6MnOXY0uVm"
+   // id, err := v.id()
    if err != nil {
-      panic(err)
+      return nil, err
+   }
+   req.Header = http.Header{
+      "content-type":      {"application/x-protobuf"},
+      "x-goog-visitor-id": {id},
+   }
+   resp, err := http.DefaultClient.Do(req)
+   if err != nil {
+      return nil, err
    }
    defer resp.Body.Close()
    if resp.StatusCode != http.StatusOK {
-      panic(resp.Status)
+      return nil, errors.New(resp.Status)
    }
-   data, err := io.ReadAll(resp.Body)
+   data, err = io.ReadAll(resp.Body)
    if err != nil {
-      panic(err)
+      return nil, err
    }
    message := protobuf.Message{}
    err = message.Unmarshal(data)
    if err != nil {
-      panic(err)
+      return nil, err
    }
+   return &get_watch{message}, nil
 }
