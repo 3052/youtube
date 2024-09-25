@@ -7,12 +7,6 @@ import (
    "net/http"
 )
 
-func (v visitor_id) id() (string, bool) {
-   m, _ := v.message.Get(1)()
-   b, ok := m.GetBytes(2)()
-   return string(b), ok
-}
-
 func (v *visitor_id) New() error {
    message := protobuf.Message{
       1: {protobuf.Message{
@@ -40,4 +34,13 @@ func (v *visitor_id) New() error {
 
 type visitor_id struct {
    message protobuf.Message
+}
+
+func (v visitor_id) id() (string, error) {
+   if v, ok := v.message.Get(1)(); ok {
+      if v, ok := v.GetBytes(2)(); ok {
+         return string(v), nil
+      }
+   }
+   return "", errors.New("visitor_id.id")
 }
