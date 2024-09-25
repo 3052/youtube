@@ -54,64 +54,11 @@ var body_1 = protobuf.Message{
       protobuf.Message{
          1: {
             protobuf.Message{
-               12: {protobuf.Bytes("unknown")},
-               13: {protobuf.Bytes("Android SDK built for x86")},
                16: {protobuf.Varint(3)},
                17: {protobuf.Bytes("19.33.35")},
-               
-               38: {protobuf.Varint(683)},
-               39: {protobuf.Fixed32(1076138569)},
-               40: {protobuf.Fixed32(1082699659)},
-               41: {protobuf.Varint(3)},
-               46: {protobuf.Varint(1)},
-               49: {protobuf.Unknown{
-                  protobuf.Bytes("\xaa\x03\x06310260"),
-                  protobuf.Message{
-                     53: {protobuf.Bytes("310260")},
-                  },
-               }},
-               50: {protobuf.Varint(220920022)},
-               52: {protobuf.Varint(4)},
-               55: {protobuf.Varint(411)},
-               56: {protobuf.Varint(683)},
-               61: {protobuf.Varint(3)},
-               62: {protobuf.Bytes("")},
-               64: {protobuf.Varint(28)},
-               65: {protobuf.Fixed32(1076363264)},
-               67: {protobuf.Varint(18446744073709551316)},
-               77: {protobuf.Fixed32(1065353216)},
-               78: {protobuf.Varint(1)},
-               80: {protobuf.Bytes("America/Chicago")},
-               92: {protobuf.Bytes("ranchu;")},
-               98: {protobuf.Bytes("Android")},
-               100: {protobuf.Unknown{
-                  protobuf.Bytes("\n\x05\b\x96\x0f\x18\x01"),
-                  protobuf.Message{
-                     1: {protobuf.Unknown{
-                        protobuf.Bytes("\b\x96\x0f\x18\x01"),
-                        protobuf.Message{
-                           1: {protobuf.Varint(1942)},
-                           3: {protobuf.Varint(1)},
-                        },
-                     }},
-                  },
-               }},
-               102: {protobuf.Unknown{
-                  protobuf.Bytes("\x10\x03\x18\x01"),
-                  protobuf.Message{
-                     2: {protobuf.Varint(3)},
-                     3: {protobuf.Varint(1)},
-                  },
-               }},
             },
          },
-         3: {protobuf.Unknown{
-            protobuf.Bytes("8\x00x\x00"),
-            protobuf.Message{
-               7:  {protobuf.Varint(0)},
-               15: {protobuf.Varint(0)},
-            },
-         }},
+         
          5: {protobuf.Unknown{
             protobuf.Bytes("\x8a\x02\x00"),
             protobuf.Message{
