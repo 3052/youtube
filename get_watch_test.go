@@ -7,15 +7,16 @@ import (
 )
 
 func TestWatch(t *testing.T) {
+   var visitor visitor_id
    time.Sleep(time.Second)
-   id, err := visitor_id()
+   err := visitor.New()
    if err != nil {
       t.Fatal(err)
    }
    time.Sleep(time.Second)
-   watch, err := get_watch(id)
+   watch, err := visitor.watch()
    if err != nil {
       t.Fatal(err)
    }
-   fmt.Println(watch)
+   fmt.Println(watch.watch())
 }
