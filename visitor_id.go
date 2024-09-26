@@ -8,6 +8,10 @@ import (
    "net/http"
 )
 
+type visitor_id struct {
+   message protobuf.Message
+}
+
 func (v *visitor_id) New() error {
    data := protobuf.Message{
       1: {protobuf.Message{
@@ -31,10 +35,6 @@ func (v *visitor_id) New() error {
    }
    v.message = protobuf.Message{}
    return v.message.Unmarshal(data)
-}
-
-type visitor_id struct {
-   message protobuf.Message
 }
 
 func (v visitor_id) id() (string, error) {
