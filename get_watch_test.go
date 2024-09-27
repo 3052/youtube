@@ -2,39 +2,17 @@ package youtube
 
 import (
    "154.pages.dev/protobuf"
-   "fmt"
    "os"
    "testing"
 )
 
 func TestWatch(t *testing.T) {
-   watch, err := visitor_id{test_visitor}.watch(test_video, nil)
+   resp, err := visitor_id{test_visitor}.watch(test_video, nil)
    if err != nil {
       t.Fatal(err)
    }
-   next := watch.play()
-   for {
-      play, ok := next()
-      if !ok {
-         break
-      }
-      fmt.Printf("%#v\n\n", play.message)
-   }
-}
-
-func TestPrint(t *testing.T) {
-   watch, err := visitor_id{test_visitor}.watch(test_video, nil)
-   if err != nil {
-      t.Fatal(err)
-   }
-   file, err := os.Create("ignore/ignore.go")
-   if err != nil {
-      t.Fatal(err)
-   }
-   defer file.Close()
-   fmt.Fprintln(file, "package youtube")
-   fmt.Fprintln(file, `import "154.pages.dev/protobuf"`)
-   fmt.Fprintf(file, "var response = %#v\n", watch.message)
+   defer resp.Body.Close()
+   resp.Write(os.Stdout)
 }
 
 // youtube.com/watch?v=40wkJJXfwQ0

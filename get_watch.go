@@ -3,31 +3,12 @@ package youtube
 import (
    "154.pages.dev/protobuf"
    "bytes"
-   "errors"
-   "io"
    "net/http"
 )
 
-type get_watch struct {
-   message protobuf.Message
-}
-
-func (g get_watch) play() func() (playback, bool) {
-   m, _ := g.message.Get(1)()
-   m, _ = m.Get(2)()
-   m, _ = m.Get(4)()
-   next := m.Get(3)
-   return func() (playback, bool) {
-      for {
-         m, ok := next()
-         return playback{m}, ok
-      }
-   }
-}
-
 func (v visitor_id) watch(
    video string, po_token protobuf.Message,
-) (*get_watch, error) {
+) (*http.Response, error) {
    message := protobuf.Message{}
    message.Add(1, func(m protobuf.Message) {
       m.Add(1, func(m protobuf.Message) {
@@ -59,22 +40,6 @@ func (v visitor_id) watch(
       "user-agent":        {"com.google.android.youtube/" + youtube_version},
       "x-goog-visitor-id": {v.id()},
    }
-   resp, err := http.DefaultClient.Do(req)
-   if err != nil {
-      return nil, err
-   }
-   defer resp.Body.Close()
-   if resp.StatusCode != http.StatusOK {
-      return nil, errors.New(resp.Status)
-   }
-   data, err := io.ReadAll(resp.Body)
-   if err != nil {
-      return nil, err
-   }
-   message = protobuf.Message{}
-   err = message.Unmarshal(data)
-   if err != nil {
-      return nil, err
-   }
-   return &get_watch{message}, nil
+   req.URL.RawQuery = "alt=json"
+   return http.DefaultClient.Do(req)
 }
