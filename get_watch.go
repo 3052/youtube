@@ -3,12 +3,24 @@ package youtube
 import (
    "154.pages.dev/protobuf"
    "bytes"
+   "encoding/json"
    "net/http"
 )
 
+type get_watch struct {
+   PlayerResponse struct {
+      StreamingData struct {
+         AdaptiveFormats []struct {
+            Itag int
+            Url string
+         }
+      }
+   }
+}
+
 func (v *visitor_id) watch(
    video string, po_token protobuf.Message,
-) (*http.Response, error) {
+) (*get_watch, error) {
    message := protobuf.Message{}
    message.Add(1, func(m protobuf.Message) {
       m.Add(1, func(m protobuf.Message) {
@@ -41,5 +53,15 @@ func (v *visitor_id) watch(
       "x-goog-visitor-id": {v.ResponseContext.VisitorData},
    }
    req.URL.RawQuery = "alt=json"
-   return http.DefaultClient.Do(req)
+   resp, err := http.DefaultClient.Do(req)
+   if err != nil {
+      return nil, err
+   }
+   defer resp.Body.Close()
+   var watch []get_watch
+   err = json.NewDecoder(resp.Body).Decode(&watch)
+   if err != nil {
+      return nil, err
+   }
+   return &watch[0], nil
 }

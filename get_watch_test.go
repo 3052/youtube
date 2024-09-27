@@ -2,19 +2,20 @@ package youtube
 
 import (
    "154.pages.dev/protobuf"
-   "os"
+   "fmt"
    "testing"
 )
 
 func TestWatch(t *testing.T) {
    var id visitor_id
    id.ResponseContext.VisitorData = test_visitor
-   resp, err := id.watch(test_video, nil)
+   watch, err := id.watch(test_video, nil)
    if err != nil {
       t.Fatal(err)
    }
-   defer resp.Body.Close()
-   resp.Write(os.Stdout)
+   for _, format := range watch.PlayerResponse.StreamingData.AdaptiveFormats {
+      fmt.Printf("%+v\n", format)
+   }
 }
 
 // youtube.com/watch?v=40wkJJXfwQ0
