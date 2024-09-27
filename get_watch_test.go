@@ -3,29 +3,38 @@ package youtube
 import (
    "154.pages.dev/protobuf"
    "fmt"
-   "strings"
+   "os"
    "testing"
 )
 
 func TestWatch(t *testing.T) {
-   var visitor visitor_id
-   err := visitor.New()
+   watch, err := visitor_id{test_visitor}.watch(test_video, nil)
    if err != nil {
       t.Fatal(err)
    }
-   watch, err := visitor.watch(test_video, nil)
+   next := watch.play()
+   for {
+      play, ok := next()
+      if !ok {
+         break
+      }
+      fmt.Printf("%#v\n\n", play.message)
+   }
+}
+
+func TestPrint(t *testing.T) {
+   watch, err := visitor_id{test_visitor}.watch(test_video, nil)
    if err != nil {
       t.Fatal(err)
    }
-   fmt.Printf("%#v\n", watch.message)
-   return
-   address, ok := watch.watch()
-   if !ok {
-      t.Fatal("get_watch.watch")
+   file, err := os.Create("ignore/ignore.go")
+   if err != nil {
+      t.Fatal(err)
    }
-   if !strings.Contains(address, ".googlevideo.com/videoplayback?") {
-      t.Fatalf("%q", address)
-   }
+   defer file.Close()
+   fmt.Fprintln(file, "package youtube")
+   fmt.Fprintln(file, `import "154.pages.dev/protobuf"`)
+   fmt.Fprintf(file, "var response = %#v\n", watch.message)
 }
 
 // youtube.com/watch?v=40wkJJXfwQ0

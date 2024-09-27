@@ -12,13 +12,17 @@ type get_watch struct {
    message protobuf.Message
 }
 
-func (g get_watch) watch() (string, bool) {
+func (g get_watch) play() func() (playback, bool) {
    m, _ := g.message.Get(1)()
    m, _ = m.Get(2)()
    m, _ = m.Get(4)()
-   m, _ = m.Get(3)()
-   watch, ok := m.GetBytes(2)()
-   return string(watch), ok
+   next := m.Get(3)
+   return func() (playback, bool) {
+      for {
+         m, ok := next()
+         return playback{m}, ok
+      }
+   }
 }
 
 func (v visitor_id) watch(
@@ -50,14 +54,10 @@ func (v visitor_id) watch(
    if err != nil {
       return nil, err
    }
-   id, err := v.id()
-   if err != nil {
-      return nil, err
-   }
    req.Header = http.Header{
       "content-type":      {"application/x-protobuf"},
       "user-agent":        {"com.google.android.youtube/" + youtube_version},
-      "x-goog-visitor-id": {id},
+      "x-goog-visitor-id": {v.id()},
    }
    resp, err := http.DefaultClient.Do(req)
    if err != nil {

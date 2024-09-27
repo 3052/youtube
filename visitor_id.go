@@ -3,10 +3,15 @@ package youtube
 import (
    "154.pages.dev/protobuf"
    "bytes"
-   "errors"
    "io"
    "net/http"
 )
+
+func (v visitor_id) id() string {
+   m, _ := v.message.Get(1)()
+   id, _ := m.GetBytes(2)()
+   return string(id)
+}
 
 const youtube_version = "19.38.37"
 
@@ -37,13 +42,4 @@ func (v *visitor_id) New() error {
    }
    v.message = protobuf.Message{}
    return v.message.Unmarshal(data)
-}
-
-func (v visitor_id) id() (string, error) {
-   if v, ok := v.message.Get(1)(); ok {
-      if v, ok := v.GetBytes(2)(); ok {
-         return string(v), nil
-      }
-   }
-   return "", errors.New("visitor_id.id")
 }
