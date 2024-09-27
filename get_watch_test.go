@@ -3,19 +3,46 @@ package youtube
 import (
    "154.pages.dev/protobuf"
    "fmt"
+   "reflect"
    "testing"
 )
 
-func TestWatch(t *testing.T) {
+func TestFormats(t *testing.T) {
    var id visitor_id
    id.ResponseContext.VisitorData = test_visitor
-   watch, err := id.watch(test_video, nil)
+   formats, err := id.watch(test_video, nil)
    if err != nil {
       t.Fatal(err)
    }
-   for _, format := range watch.PlayerResponse.StreamingData.AdaptiveFormats {
-      fmt.Printf("%+v\n", format)
+   fmt.Println(formats)
+}
+
+func TestFormat(t *testing.T) {
+   var id visitor_id
+   id.ResponseContext.VisitorData = test_visitor
+   formats, err := id.watch(test_video, nil)
+   if err != nil {
+      t.Fatal(err)
    }
+   for _, format := range formats {
+      fmt.Println(format)
+   }
+}
+
+func TestSize(t *testing.T) {
+   size := reflect.TypeOf(&struct{}{}).Size()
+   for _, test := range size_tests {
+      if reflect.TypeOf(test).Size() > size {
+         fmt.Printf("*%T\n", test)
+      } else {
+         fmt.Printf("%T\n", test)
+      }
+   }
+}
+
+var size_tests = []any{
+   adaptive_formats{},
+   visitor_id{},
 }
 
 // youtube.com/watch?v=40wkJJXfwQ0

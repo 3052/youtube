@@ -5,22 +5,12 @@ import (
    "bytes"
    "encoding/json"
    "net/http"
+   "strconv"
 )
-
-type get_watch struct {
-   PlayerResponse struct {
-      StreamingData struct {
-         AdaptiveFormats []struct {
-            Itag int
-            Url string
-         }
-      }
-   }
-}
 
 func (v *visitor_id) watch(
    video string, po_token protobuf.Message,
-) (*get_watch, error) {
+) (adaptive_formats, error) {
    message := protobuf.Message{}
    message.Add(1, func(m protobuf.Message) {
       m.Add(1, func(m protobuf.Message) {
@@ -58,10 +48,60 @@ func (v *visitor_id) watch(
       return nil, err
    }
    defer resp.Body.Close()
-   var watch []get_watch
+   var watch []struct {
+      PlayerResponse struct {
+         StreamingData struct {
+            AdaptiveFormats adaptive_formats
+         }
+      }
+   }
    err = json.NewDecoder(resp.Body).Decode(&watch)
    if err != nil {
       return nil, err
    }
-   return &watch[0], nil
+   return watch[0].PlayerResponse.StreamingData.AdaptiveFormats, nil
+}
+
+type adaptive_formats []adaptive_format
+
+type adaptive_format struct {
+   AudioQuality string
+   Bitrate int64
+   IsDrc bool // wikipedia.org/wiki/Dynamic_range_compression
+   MimeType string
+   QualityLabel string
+   Url string
+}
+
+func (a *adaptive_format) String() string {
+   b := []byte("bitrate = ")
+   b = strconv.AppendInt(b, a.Bitrate, 10)
+   if a.IsDrc {
+      b = append(b, "\ndrc = true"...)
+   }
+   if a.AudioQuality != "" {
+      b = append(b, "\naudio = "...)
+      b = append(b, a.AudioQuality...)
+   }
+   b = append(b, "\ntype = "...)
+   b = append(b, a.MimeType...)
+   if a.QualityLabel != "" {
+      b = append(b, "\nlabel = "...)
+      b = append(b, a.QualityLabel...)
+   }
+   return string(b)
+}
+
+func (a adaptive_formats) String() string {
+   var b []byte
+   for i, format := range a {
+      if i >= 1 {
+         b = append(b, "\n\n"...)
+      }
+      b = append(b, "index = "...)
+      b = strconv.AppendInt(b, int64(i), 10)
+      b = append(b, '\n')
+      b = append(b, format.String()...)
+   }
+   return string(b)
 }
