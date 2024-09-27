@@ -8,6 +8,8 @@ import (
    "net/http"
 )
 
+const youtube_version = "19.38.37"
+
 type visitor_id struct {
    message protobuf.Message
 }
@@ -17,7 +19,7 @@ func (v *visitor_id) New() error {
       1: {protobuf.Message{
          1: {protobuf.Message{
             16: {protobuf.Varint(3)},
-            17: {protobuf.Bytes("19.33.35")},
+            17: {protobuf.Bytes(youtube_version)},
          }},
       }},
    }.Marshal()
