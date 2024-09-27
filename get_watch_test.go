@@ -7,7 +7,9 @@ import (
 )
 
 func TestWatch(t *testing.T) {
-   resp, err := visitor_id{test_visitor}.watch(test_video, nil)
+   var id visitor_id
+   id.ResponseContext.VisitorData = test_visitor
+   resp, err := id.watch(test_video, nil)
    if err != nil {
       t.Fatal(err)
    }

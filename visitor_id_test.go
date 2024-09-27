@@ -1,22 +1,33 @@
 package youtube
 
 import (
-   "154.pages.dev/protobuf"
    "fmt"
+   "reflect"
    "testing"
 )
 
-var test_visitor = protobuf.Message{
-   1: {protobuf.Message{
-      2: {protobuf.Bytes("CgtpdWhjUkQwRTJsOCiriNy3BjIKCgJVUxIEGgAgMToMCAEgtfbFn7WFwftm")},
-   }},
+func TestSize(t *testing.T) {
+   size := reflect.TypeOf(&struct{}{}).Size()
+   for _, test := range size_tests {
+      if reflect.TypeOf(test).Size() > size {
+         fmt.Printf("*%T\n", test)
+      } else {
+         fmt.Printf("%T\n", test)
+      }
+   }
 }
 
-func TestVisitor(t *testing.T) {
+var size_tests = []any{
+   visitor_id{},
+}
+
+const test_visitor = "CgtpdWhjUkQwRTJsOCiriNy3BjIKCgJVUxIEGgAgMToMCAEgtfbFn7WFwftm"
+
+func TestVisitorId(t *testing.T) {
    var visitor visitor_id
    err := visitor.New()
    if err != nil {
       t.Fatal(err)
    }
-   fmt.Printf("%q\n", visitor.id())
+   fmt.Printf("%+v\n", visitor)
 }

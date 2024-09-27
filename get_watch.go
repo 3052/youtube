@@ -6,7 +6,7 @@ import (
    "net/http"
 )
 
-func (v visitor_id) watch(
+func (v *visitor_id) watch(
    video string, po_token protobuf.Message,
 ) (*http.Response, error) {
    message := protobuf.Message{}
@@ -38,7 +38,7 @@ func (v visitor_id) watch(
    req.Header = http.Header{
       "content-type":      {"application/x-protobuf"},
       "user-agent":        {"com.google.android.youtube/" + youtube_version},
-      "x-goog-visitor-id": {v.id()},
+      "x-goog-visitor-id": {v.ResponseContext.VisitorData},
    }
    req.URL.RawQuery = "alt=json"
    return http.DefaultClient.Do(req)
