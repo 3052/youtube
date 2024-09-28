@@ -93,13 +93,12 @@ var req_body = protobuf.Message{
                      6:  {protobuf.Fixed32(1066863165)},
                      11: {protobuf.Varint(1)},
                      13: {protobuf.Varint(1)},
-                     14: {protobuf.Unknown{
-                        protobuf.Bytes("\n\x16mfs2_cmfs_web_v3_2_003\x18\x00"),
+                     14: {
                         protobuf.Message{
                            1: {protobuf.Bytes("mfs2_cmfs_web_v3_2_003")},
                            3: {protobuf.Varint(0)},
                         },
-                     }},
+                     },
                      15: {protobuf.Varint(9999)},
                      20: {protobuf.Varint(1)},
                      21: {protobuf.Varint(0)},
@@ -247,11 +246,9 @@ var req_body = protobuf.Message{
                      59: {protobuf.Varint(1)},
                      60: {protobuf.Varint(10000)},
                      71: {protobuf.Varint(1)},
-                     73: {protobuf.Unknown{
-                        protobuf.Bytes("\n\x13\b\xc0\xa9\a\x10\x98u\x18\xe8\a%\x00\x00\x00\x00(\x000\x00\x10\xe0\xd4\x03\x18\xd0\x0f"),
+                     73: {
                         protobuf.Message{
-                           1: {protobuf.Unknown{
-                              protobuf.Bytes("\b\xc0\xa9\a\x10\x98u\x18\xe8\a%\x00\x00\x00\x00(\x000\x00"),
+                           1: {
                               protobuf.Message{
                                  1: {protobuf.Varint(120000)},
                                  2: {protobuf.Varint(15000)},
@@ -260,38 +257,34 @@ var req_body = protobuf.Message{
                                  5: {protobuf.Varint(0)},
                                  6: {protobuf.Varint(0)},
                               },
-                           }},
+                           },
                            2: {protobuf.Varint(60000)},
                            3: {protobuf.Varint(2000)},
                         },
-                     }},
-                     74: {protobuf.Unknown{
-                        protobuf.Bytes("\n\b\b\xb0\t\x10\xb0\t \x01 \x88'"),
+                     },
+                     74: {
                         protobuf.Message{
-                           1: {protobuf.Unknown{
-                              protobuf.Bytes("\b\xb0\t\x10\xb0\t \x01"),
+                           1: {
                               protobuf.Message{
                                  1: {protobuf.Varint(1200)},
                                  2: {protobuf.Varint(1200)},
                                  4: {protobuf.Varint(1)},
                               },
-                           }},
+                           },
                            4: {protobuf.Varint(5000)},
                         },
-                     }},
-                     75: {protobuf.Unknown{
-                        protobuf.Bytes("\n\x06\b\xf0.\x10\xf0. \xf0."),
+                     },
+                     75: {
                         protobuf.Message{
-                           1: {protobuf.Unknown{
-                              protobuf.Bytes("\b\xf0.\x10\xf0."),
+                           1: {
                               protobuf.Message{
                                  1: {protobuf.Varint(6000)},
                                  2: {protobuf.Varint(6000)},
                               },
-                           }},
+                           },
                            4: {protobuf.Varint(6000)},
                         },
-                     }},
+                     },
                      79:  {protobuf.Varint(1)},
                      82:  {protobuf.Varint(1)},
                      85:  {protobuf.Varint(1)},
@@ -304,30 +297,27 @@ var req_body = protobuf.Message{
                      101: {protobuf.Varint(32768)},
                      104: {protobuf.Varint(1)},
                      105: {protobuf.Varint(1)},
-                     106: {protobuf.Unknown{
-                        protobuf.Bytes("\b\xe8\a\x10d\x1a\r\b\x88'\x15\x00\x00\x00?\x1d\xcd\xccL?"),
+                     106: {
                         protobuf.Message{
                            1: {protobuf.Varint(1000)},
                            2: {protobuf.Varint(100)},
-                           3: {protobuf.Unknown{
-                              protobuf.Bytes("\b\x88'\x15\x00\x00\x00?\x1d\xcd\xccL?"),
+                           3: {
                               protobuf.Message{
                                  1: {protobuf.Varint(5000)},
                                  2: {protobuf.Fixed32(1056964608)},
                                  3: {protobuf.Fixed32(1061997773)},
                               },
-                           }},
+                           },
                         },
-                     }},
+                     },
                      108: {protobuf.Varint(1)},
-                     112: {protobuf.Unknown{
-                        protobuf.Bytes("\x15\x00\x00\x80?\x18d \x90N"),
+                     112: {
                         protobuf.Message{
                            2: {protobuf.Fixed32(1065353216)},
                            3: {protobuf.Varint(100)},
                            4: {protobuf.Varint(10000)},
                         },
-                     }},
+                     },
                      113: {protobuf.Varint(1)},
                      116: {protobuf.Varint(1)},
                      119: {protobuf.Varint(1)},
@@ -336,14 +326,13 @@ var req_body = protobuf.Message{
                      132: {protobuf.Varint(1)},
                      134: {protobuf.Varint(1)},
                      135: {protobuf.Varint(1)},
-                     138: {protobuf.Unknown{
-                        protobuf.Bytes("\b\x01\x10\x01\x18\x01"),
+                     138: {
                         protobuf.Message{
                            1: {protobuf.Varint(1)},
                            2: {protobuf.Varint(1)},
                            3: {protobuf.Varint(1)},
                         },
-                     }},
+                     },
                      147:       {protobuf.Varint(1)},
                      149:       {protobuf.Fixed64(13830554455654793216)},
                      150:       {protobuf.Fixed64(13830554455654793216)},
@@ -493,8 +482,7 @@ var req_body = protobuf.Message{
                },
                7: {protobuf.Bytes{}},
                9: {protobuf.Varint(0)},
-               10: {protobuf.Unknown{
-                  protobuf.Bytes("\x1a\x02en(\x002\x18UCqeAJqujkbzivXidDfN8kug8\x00@\x00X\x00"),
+               10: {
                   protobuf.Message{
                      3:  {protobuf.Bytes("en")},
                      5:  {protobuf.Varint(0)},
@@ -503,7 +491,7 @@ var req_body = protobuf.Message{
                      8:  {protobuf.Varint(0)},
                      11: {protobuf.Varint(0)},
                   },
-               }},
+               },
                473865394: {protobuf.Varint(1)},
             },
          },
