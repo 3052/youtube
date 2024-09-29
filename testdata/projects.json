@@ -11,49 +11,5 @@
       "id": "861556708454-912i5jlic99ecvu3ro5kqirg0hldli5t.apps.googleusercontent.com"
    }
   ]
- },
-
- {
-  "name": "YouTube Android",
-  "clients": [
-   {
-    "id": "414843287017-ceduiv97av1upoplqjev2aaoeq6j16lk.apps.googleusercontent.com"
-   },
-   {
-    "id": "414843287017-puh18868jm25h4f136f1vju3qg5j492i.apps.googleusercontent.com"
-   }
-  ]
- },
- {
-  "name": "YouTube Music (YouTube Music Android)",
-  "clients": [
-   {
-    "id": "551011954849-d0tangvu20d72nmms5j1m4i5es648va2.apps.googleusercontent.com"
-   }
-  ]
- },
- {
-  "name": "YouTube (YouTube iOS)",
-  "clients": [
-   {
-    "id": "755541669657-kbosfavg7pk7sr3849c3tf657hpi5jpd.apps.googleusercontent.com"
-   }
-  ]
- },
- {
-  "name": "YouTube Music iOS",
-  "clients": [
-   {
-    "id": "755973059757-iigsfdoqt2c4qm209soqp2dlrh33almr.apps.googleusercontent.com"
-   }
-  ]
- },
- {
-  "name": "YouTube TV (YouTube TV iOS)",
-  "clients": [
-   {
-    "id": "571458281011-o9pps7tr4fmnatnge4fvvfff75fka6a3.apps.googleusercontent.com"
-   }
-  ]
  }
 ]
