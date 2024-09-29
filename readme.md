@@ -24,3 +24,7 @@ windows defender firewall:
 
 - https://community.zscaler.com/s/question/0D54u00009evmkVCAQ/recommended-method-to-block-quic-and-http3
 - https://superuser.com/questions/1182658/how-to-block-everything-all-incoming
+
+## prior art
+
+https://github.com/LuanRT/googlevideo
