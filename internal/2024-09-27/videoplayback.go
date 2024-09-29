@@ -93,13 +93,12 @@ var req_body = protobuf.Message{
                      6:  {protobuf.Fixed32(1066863165)},
                      11: {protobuf.Varint(1)},
                      13: {protobuf.Varint(1)},
-                     14: {protobuf.Unknown{
-                        protobuf.Bytes("\n\x16mfs2_cmfs_web_v3_2_003\x18\x00"),
+                     14: {
                         protobuf.Message{
                            1: {protobuf.Bytes("mfs2_cmfs_web_v3_2_003")},
                            3: {protobuf.Varint(0)},
                         },
-                     }},
+                     },
                      15: {protobuf.Varint(9999)},
                      20: {protobuf.Varint(1)},
                      21: {protobuf.Varint(0)},
@@ -247,11 +246,9 @@ var req_body = protobuf.Message{
                      59: {protobuf.Varint(1)},
                      60: {protobuf.Varint(10000)},
                      71: {protobuf.Varint(1)},
-                     73: {protobuf.Unknown{
-                        protobuf.Bytes("\n\x13\b\xc0\xa9\a\x10\x98u\x18\xe8\a%\x00\x00\x00\x00(\x000\x00\x10\xe0\xd4\x03\x18\xd0\x0f"),
+                     73: {
                         protobuf.Message{
-                           1: {protobuf.Unknown{
-                              protobuf.Bytes("\b\xc0\xa9\a\x10\x98u\x18\xe8\a%\x00\x00\x00\x00(\x000\x00"),
+                           1: {
                               protobuf.Message{
                                  1: {protobuf.Varint(120000)},
                                  2: {protobuf.Varint(15000)},
@@ -260,11 +257,11 @@ var req_body = protobuf.Message{
                                  5: {protobuf.Varint(0)},
                                  6: {protobuf.Varint(0)},
                               },
-                           }},
+                           },
                            2: {protobuf.Varint(60000)},
                            3: {protobuf.Varint(2000)},
                         },
-                     }},
+                     },
                      74: {protobuf.Unknown{
                         protobuf.Bytes("\n\b\b\xb0\t\x10\xb0\t \x01 \x88'"),
                         protobuf.Message{
