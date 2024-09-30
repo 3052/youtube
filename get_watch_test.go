@@ -10,16 +10,6 @@ import (
 // youtube.com/watch?v=40wkJJXfwQ0
 const test_video = "40wkJJXfwQ0"
 
-func TestFormat(t *testing.T) {
-   var id visitor_id
-   id.ResponseContext.VisitorData = test_visitor
-   formats, err := id.watch(test_video, nil)
-   if err != nil {
-      t.Fatal(err)
-   }
-   fmt.Printf("curl -o o -H range:bytes=0-9999999 '%v'\n", formats[0].Url)
-}
-
 func TestFormats(t *testing.T) {
    var id visitor_id
    id.ResponseContext.VisitorData = test_visitor
@@ -28,6 +18,16 @@ func TestFormats(t *testing.T) {
       t.Fatal(err)
    }
    fmt.Println(formats)
+}
+
+func TestFormat(t *testing.T) {
+   var id visitor_id
+   id.ResponseContext.VisitorData = test_visitor
+   formats, err := id.watch(test_video, nil)
+   if err != nil {
+      t.Fatal(err)
+   }
+   fmt.Printf("curl -o o -H range:bytes=0-9999999 '%v'\n", formats[0].Url)
 }
 
 func TestSize(t *testing.T) {

@@ -33,6 +33,14 @@ this works:
 100 9765k  100 9765k    0     0  13.3M      0 --:--:-- --:--:-- --:--:-- 13.3M
 ~~~
 
-what does the web client do?
+## what does the web client do?
 
-what does the Android client do?
+## what does the Android client do?
+
+## other research
+
+~~~
+videoPlaybackUstreamerConfig
+~~~
+
+https://github.com/LuanRT/googlevideo/blob/main/examples/downloader/main.ts
