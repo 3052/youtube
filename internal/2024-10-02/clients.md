@@ -1,6 +1,6 @@
 # clients
 
-## 0 UNKNOWN\_INTERFACE
+## 0 `UNKNOWN_INTERFACE`
 
 I dont know what client this is
 
@@ -127,13 +127,13 @@ I dont know what client this is
 
 I dont know how to capture this client
 
-## 14 ANDROID\_CREATOR
+## 14 `ANDROID_CREATOR`
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator
 
 if you try to play a video it just opens another app
 
-## 15 IOS\_CREATOR
+## 15 `IOS_CREATOR`
 
 I dont know how to capture this client
 
@@ -145,7 +145,7 @@ I dont know how to capture this client
 
 I dont know how to capture this client
 
-## 18 ANDROID\_KIDS
+## 18 `ANDROID_KIDS`
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids
 
@@ -167,11 +167,11 @@ ump:
 
 I dont know how to capture this client
 
-## 20 ANDROID\_INSTANT
+## 20 `ANDROID_INSTANT`
 
 I dont know what client this is
 
-## 21 ANDROID\_MUSIC
+## 21 `ANDROID_MUSIC`
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvmusic
 
@@ -197,9 +197,11 @@ ump:
 
 I dont know how to capture this client
 
-## 23 ANDROID\_TV
+---------------------------------------------------------------------------------
 
-I dont know what client this is
+## 23 `ANDROID_TV`
+
+https://play.google.com/store/apps/details?id=com.google.android.youtube.tv
 
 ## 24 ANDROID\_GAMING
 
@@ -208,3 +210,111 @@ I dont know what client this is
 ## 25 IOS\_GAMING
 
 I dont know how to capture this client
+
+## 26 IOS\_MUSIC
+
+I dont know how to capture this client
+
+## 27 MWEB\_TIER\_2
+
+I dont know what client this is
+
+## 28 ANDROID\_VR
+
+
+---------------------------------------------------------------------------------
+
+## YouTube Music for Chromebook
+
+~~~
+WEB_REMIX
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
+
+## YouTube TV: Live TV & more
+
+~~~
+ANDROID_UNPLUGGED
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.unplugged
+
+~~~
+TV_UNPLUGGED_ANDROID
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.youtube.tvunplugged
+
+## YouTube VR
+
+~~~
+ANDROID_VR
+com.google.android.apps.youtube.vr
+~~~
+
+https://apkmirror.com/apk/google-inc/youtube-vr-daydream
+
+## YouTube Create
+
+~~~
+ANDROID_PRODUCER
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
+
+## YouTube Gaming
+
+~~~
+ANDROID_GAMING
+com.google.android.apps.youtube.gaming
+~~~
+
+https://apkmirror.com/apk/google-inc/youtube-gaming
+
+## YouTube Go
+
+~~~
+ANDROID_LITE
+com.google.android.apps.youtube.mango
+~~~
+
+https://apkmirror.com/apk/google-inc/youtube-go
+
+## YouTube for Fire TV
+
+~~~
+com.amazon.firetv.youtube
+~~~
+
+wont install with Android 9
+
+https://apkmirror.com/apk/google-inc/youtube-for-fire-tv
+
+## YouTube Kids for Fire TV
+
+~~~
+com.amazon.firetv.youtube.kids 
+~~~
+
+wont install even with Android 9
+
+https://apkmirror.com/apk/google-inc/youtube-kids-for-fire-tv
+
+## YouTube Kids for Android TV
+
+~~~
+ANDROID_TV_KIDS
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
+
+## YouTube Music (Wear OS)
+
+~~~
+com.google.android.apps.musicweardemo.retailmode 
+~~~
+
+wont install
+
+https://apkmirror.com/apk/google-inc/youtube-music-wear-os-11
