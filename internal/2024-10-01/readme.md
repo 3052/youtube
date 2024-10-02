@@ -8,14 +8,6 @@ WEB_REMIX
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
 
-## YouTube Studio
-
-~~~
-ANDROID_CREATOR
-~~~
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator
-
 ## YouTube TV: Live TV & more
 
 ~~~
@@ -72,28 +64,6 @@ com.google.android.apps.youtube.mango
 ~~~
 
 https://apkmirror.com/apk/google-inc/youtube-go
-
-## YouTube Kids
-
-~~~
-ANDROID_KIDS
-~~~
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids
-
-client is not using range, but it is allowed
-
-## YouTube Music
-
-~~~
-ANDROID_MUSIC
-~~~
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music
-
-wont run on virtual device, even with proxy disabled. tried Android 9:
-
-https://play.google.com/store/apps/details?id=com.google.android.youtube.tvmusic
 
 ## YouTube for Fire TV
 

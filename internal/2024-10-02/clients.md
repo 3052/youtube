@@ -106,3 +106,105 @@ ump:
 "\n\xa3\x80\x00\x90\x01\xc5\v\x98\x01\x93\x06\xa8\x01\x00\xe0\x01\x00\x90\x02..."
 "\b\b\xb0\t\x10\xb0\t \x01 \x88'\xda\x04\v\n\x06\b\xf0.\x10\xf0. \xf0.\xf8\x04..."
 ~~~
+
+## 8 TVLITE
+
+I dont know what client this is
+
+## 10 TVANDROID
+
+I dont know what client this is
+
+## 11 XBOX
+
+I dont know how to capture this client
+
+## 12 CLIENTX
+
+I dont know what client this is
+
+## 13 XBOXONEGUIDE
+
+I dont know how to capture this client
+
+## 14 ANDROID\_CREATOR
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator
+
+if you try to play a video it just opens another app
+
+## 15 IOS\_CREATOR
+
+I dont know how to capture this client
+
+## 16 TVAPPLE
+
+I dont know how to capture this client
+
+## 17 IOS\_INSTANT
+
+I dont know how to capture this client
+
+## 18 ANDROID\_KIDS
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids
+
+ump:
+
+~~~
+"POST /videoplayback?expire=1727930103&ei=l8r9ZsyPOe3IzN0PkM6Y8AM&ip=72.181.16.91&id=o-AEMRc2lRRCIZLPL7Z7Ie8AVo-EJPYum9veez0urzNGxb&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=rj&mm=31%2C26&mn=sn-q4flrnsk%2Csn-a5meknde&ms=au%2Conr&mv=m&mvi=4&pl=19&pcm2=yes&initcwndbps=1233750&svpuc=1&sabr=1&rqh=1&mt=1727908136&fvip=5&keepalive=yes&fexp=51300760&c=ANDROID_KIDS&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cpcm2%2Csvpuc%2Csabr%2Crqh&sig=AJfQdSswRQIhAIUd41mWRwIfm3QuETiyxZTxpxw5cYaPp1ZtHp31n2oWAiBCoTpA0IJkBesHwb9sbUfYh57_ImHFAY0gDzFfgtrRGg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=ABPmVW0wRQIgRl8U-S70jy-IOS7l4q6a_RUNvdtYT9Is7iJA7gZN74ECIQCSg5SY3bA9V9m8zfCQIpAjiqQGoL2sHbN3-b1Vgm7EpA%3D%3D&cpn=ipy1CXXvnPS9vgJv&rn=2 HTTP/1.1"
+"Host: rr4---sn-q4flrnsk.googlevideo.com"
+"Connection: keep-alive"
+"Content-Length: 1858"
+"Content-Type: application/x-protobuf"
+"User-Agent: com.google.android.apps.youtube.kids/153801030 (Linux; U; Android 9; en_US; AOSP on IA Emulator; Build/PSR1.180720.122; Cronet/129.0.6614.4)"
+"Accept-Encoding: gzip, deflate, br"
+""
+"\n6\x88\x01t\x90\x01\xff\x0e\x98\x01\xb8\b\xb0\x01\x00\xb8\x01\xb4\xa0\x81\x..."
+~~~
+
+## 19 IOS\_KIDS
+
+I dont know how to capture this client
+
+## 20 ANDROID\_INSTANT
+
+I dont know what client this is
+
+## 21 ANDROID\_MUSIC
+
+https://play.google.com/store/apps/details?id=com.google.android.youtube.tvmusic
+
+wont run on virtual device, even with proxy disabled. tried Android 9
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music
+
+ump:
+
+~~~
+"POST /videoplayback?expire=1727931210&ei=6s79ZpvJFqK0ir4PyryJmA0&ip=72.181.16.91&id=o-AE-D7jiwQnqG9sPkd2KltnaNQGlKvYSwPGQGwGGJwBeg&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=xj&mm=31%2C26&mn=sn-q4flrnez%2Csn-a5mlrnll&ms=au%2Conr&mv=m&mvi=4&pl=19&ctier=A&pfa=5&gcr=us&initcwndbps=1240000&hightc=yes&siu=1&spc=54MbxQu13pamnn0c5dd1KqWEh1ljwnnODzH8clzS8HZW2LTzMM9IA_pvKWvh&svpuc=1&sabr=1&rqh=1&mt=1727909099&fvip=5&keepalive=yes&fexp=51300760&c=ANDROID_MUSIC&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cctier%2Cpfa%2Cgcr%2Chightc%2Csiu%2Cspc%2Csvpuc%2Csabr%2Crqh&sig=AJfQdSswRQIhAL-RAWRbUt3wXuh9nWCQZJh4m0h1xTHbwZxqz-Q2NcFaAiBDnOkVsM508tRUsvTGD_BjRKpVGwvmkcKsjWlYIQn2eQ%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=ABPmVW0wRQIhAIfAnsyd2FcfZ4nSkWELEzQrY6t8PEX0gmFdQBXE39u6AiAjSnVzcVZR98q--aAVYG3auWe10Ggp4GeVA_WtxQyZWw%3D%3D&cpn=UBoejYYSjpWH11j-&rn=12 HTTP/1.1"
+"Host: rr4---sn-q4flrnez.googlevideo.com"
+"Connection: keep-alive"
+"Content-Length: 1754"
+"Content-Type: application/x-protobuf"
+"User-Agent: com.google.android.apps.youtube.music/72150270 (Linux; U; Android 9; en_US; AOSP on IA Emulator; Build/PSR1.180720.122; Cronet/129.0.6614.4)"
+"Accept-Encoding: gzip, deflate, br"
+""
+"\n6\x88\x01t\x90\x01\xa0\x06\x98\x01\xa0\x06\xb0\x01\x01\xb8\x01\x96\xfe\x97..."
+~~~
+
+## 22 IOS\_TABLOID
+
+I dont know how to capture this client
+
+## 23 ANDROID\_TV
+
+I dont know what client this is
+
+## 24 ANDROID\_GAMING
+
+I dont know what client this is
+
+## 25 IOS\_GAMING
+
+I dont know how to capture this client
