@@ -1,51 +1,131 @@
 # youtube
 
-from here:
-
-https://play.google.com/store/apps/dev?id=5700313618786177705
-
-we have these:
-
-## com.google.android.apps.youtube.creator
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator
-
-## com.google.android.apps.youtube.kids
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids
-
-## com.google.android.apps.youtube.music
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music
-
-## com.google.android.apps.youtube.music.pwa
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
-
-## com.google.android.apps.youtube.producer
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
-
-## com.google.android.apps.youtube.unplugged
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.unplugged
-
-## com.google.android.youtube
+## YouTube
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube
 
-## com.google.android.youtube.tv
+~~~
+ANDROID
+~~~
+
+## YouTube Create
+
+~~~
+ANDROID_PRODUCER
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
+
+## YouTube for Android TV
+
+~~~
+ANDROID_TV
+~~~
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tv
 
-## com.google.android.youtube.tvkids
+## YouTube for Fire TV
+
+~~~
+com.amazon.firetv.youtube
+~~~
+
+wont install with Android 9
+
+https://apkmirror.com/apk/google-inc/youtube-for-fire-tv
+
+## YouTube Gaming
+
+~~~
+ANDROID_GAMING
+com.google.android.apps.youtube.gaming
+~~~
+
+https://apkmirror.com/apk/google-inc/youtube-gaming
+
+## YouTube Go
+
+~~~
+ANDROID_LITE
+com.google.android.apps.youtube.mango
+~~~
+
+https://apkmirror.com/apk/google-inc/youtube-go
+
+## YouTube Kids
+
+~~~
+ANDROID_KIDS
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids
+
+client is not using range, but it is allowed
+
+## YouTube Kids for Fire TV
+
+~~~
+com.amazon.firetv.youtube.kids 
+~~~
+
+wont install even with Android 9
+
+https://apkmirror.com/apk/google-inc/youtube-kids-for-fire-tv
+
+## YouTube Kids for Android TV
+
+~~~
+ANDROID_TV_KIDS
+~~~
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
 
-## com.google.android.youtube.tvmusic
+## YouTube Music
+
+~~~
+ANDROID_MUSIC
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music
+
+wont run on virtual device, even with proxy disabled. tried Android 9:
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvmusic
 
-## com.google.android.youtube.tvunplugged
+## YouTube Music (Wear OS)
+
+~~~
+com.google.android.apps.musicweardemo.retailmode 
+~~~
+
+https://apkmirror.com/apk/google-inc/youtube-music-wear-os-11
+
+## YouTube Music for Chromebook
+
+~~~
+WEB_REMIX
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
+
+## YouTube Studio
+
+~~~
+ANDROID_CREATOR
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator
+
+## YouTube TV: Live TV & more
+
+~~~
+ANDROID_UNPLUGGED
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.unplugged
+
+~~~
+TV_UNPLUGGED_ANDROID
+~~~
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvunplugged
