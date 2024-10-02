@@ -1,13 +1,5 @@
 # youtube
 
-## YouTube
-
-https://play.google.com/store/apps/details?id=com.google.android.youtube
-
-~~~
-ANDROID
-~~~
-
 ## YouTube Music for Chromebook
 
 ~~~
