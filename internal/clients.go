@@ -3,25 +3,42 @@ package main
 import (
    "fmt"
    "os"
+   "regexp"
    "slices"
    "strconv"
    "strings"
 )
 
+type youtube_client struct {
+   id int
+   name string
+}
+
+func (y *youtube_client) Set(text string) error {
+   y.name, text, _ = strings.Cut(text, "(")
+   var err error
+   y.id, err = strconv.Atoi(text)
+   if err != nil {
+      return err
+   }
+   return nil
+}
+
 func main() {
-   in, err := os.ReadFile("in.txt")
+   java, err := os.ReadFile("asrr.java")
    if err != nil {
       panic(err)
    }
-   out, err := os.Create("out.txt")
+   file, err := os.Create("clients.txt")
    if err != nil {
       panic(err)
    }
-   defer out.Close()
+   defer file.Close()
    var clients []youtube_client
-   for _, line := range strings.Fields(string(in)) {
+   re := regexp.MustCompile(`\S+\(\d+`)
+   for _, match := range re.FindAllString(string(java), -1) {
       var client youtube_client
-      err = client.Set(line)
+      err = client.Set(match)
       if err != nil {
          panic(err)
       }
@@ -31,22 +48,6 @@ func main() {
       return a.id - b.id
    })
    for _, client := range clients {
-      fmt.Fprintln(out, client)
+      fmt.Fprintln(file, client)
    }
-}
-
-func (y *youtube_client) Set(text string) error {
-   y.name, text, _ = strings.Cut(text, "(")
-   id, _, _ := strings.Cut(text, ")")
-   var err error
-   y.id, err = strconv.Atoi(id)
-   if err != nil {
-      return err
-   }
-   return nil
-}
-
-type youtube_client struct {
-   name string
-   id int
 }
