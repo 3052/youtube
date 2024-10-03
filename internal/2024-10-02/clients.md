@@ -313,31 +313,9 @@ I dont know what client this is
 
 I dont know what client this is
 
----------------------------------------------------------------------------------
-
 ## 56 `WEB_EMBEDDED_PLAYER`
 
-~~~
-"POST /videoplayback?expire=1727672992&ei=QN75ZqTKDrWFir4PouGwsQM&ip=72.181.16.91&id=o-AK6FBIxQCus7HW2TgHvBHIKE8vNydN96Id34cPU0S2C8&itag=398&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278%2C394%2C395%2C396%2C397%2C398%2C399&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=sv&mm=31%2C29&mn=sn-q4fl6nd7%2Csn-q4flrnsk&ms=au%2Crdu&mv=m&mvi=2&pl=19&initcwndbps=1316250&bui=AXLXGFTYUcGsshWjhKtsJZhTi3tTbJPugMrR3gH3S0-Fari0-ILl59YVjEgr3hN-2XaRu_MwgBXqDJPb&spc=54MbxX2_UPBk9yneFy0AY7GQQxibd2qHhKr_bmkThUIWsIBe2A&vprv=1&svpuc=1&mime=video%2Fmp4&ns=MJkLrc4nAuIM_4Tqex96NPkQ&rqh=1&gir=yes&clen=21325632&dur=505.104&lmt=1702399840824042&mt=1727650857&fvip=1&keepalive=yes&fexp=51299152&c=WEB_EMBEDDED_PLAYER&sefc=1&txp=5537434&n=3IdgcXKvQqIliw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhALjoWIzjXoXoulKOGObbgnRmbPid39W1PViGLskdDFQFAiAnd-Dto8haYSdCPkwrSBKssiELF1u78JtuMjxsVqNI4g%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=ABPmVW0wRAIgXMbY3s9GnYRi-ccrGqefS3CTMynztOmBoIcNS8Oygm8CIBsI82u7tXVjY959Sw_oCT90mrY2uyAFeetGCS1hSLch&alr=yes&cpn=D7y9qkFSyUQUUUwE&cver=1.20240924.01.00&range=818405-2485498&rn=7&rbuf=18090&pot=MnQo_YviaMxQySjFTtKUPAuPFM8kCUbNoPQz72lD4D9QQxEoOtIBKxjcB-UNLG8JXfcUfFVovsH4iRc2c5gd34eMJMDGCTU4h23hkehicwolVQ5goKzHt4hjtlbBgu4n6gnY0Euoe9kFIG6UrxrJYsI5Gpk_Xw==&ump=1&srfvp=1 HTTP/1.1"
-"Host: rr2---sn-q4fl6nd7.googlevideo.com"
-"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0"
-"Accept: */*"
-"Accept-Language: en-US,en;q=0.5"
-"Accept-Encoding: gzip, deflate, br"
-"Referer: https://www.youtube.com/"
-"Content-Length: 2"
-"Origin: https://www.youtube.com"
-"DNT: 1"
-"Sec-GPC: 1"
-"Connection: keep-alive"
-"Sec-Fetch-Dest: empty"
-"Sec-Fetch-Mode: cors"
-"Sec-Fetch-Site: cross-site"
-"Pragma: no-cache"
-"Cache-Control: no-cache"
-""
-"x\x00"
-~~~
+`/videoplayback` requires `pot`
 
 ---------------------------------------------------------------------------------
 
