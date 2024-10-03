@@ -197,15 +197,19 @@ ump:
 
 I dont know how to capture this client
 
----------------------------------------------------------------------------------
-
 ## 23 `ANDROID_TV`
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tv
 
-## 24 ANDROID\_GAMING
+error after capturing two requests
 
-I dont know what client this is
+## 24 `ANDROID_GAMING`
+
+https://apkmirror.com/apk/google-inc/youtube-gaming
+
+discontinued:
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.gaming
 
 ## 25 IOS\_GAMING
 
@@ -219,10 +223,131 @@ I dont know how to capture this client
 
 I dont know what client this is
 
-## 28 ANDROID\_VR
+## 28 `ANDROID_VR`
 
+https://apkmirror.com/apk/google-inc/youtube-vr-daydream
+
+discontinued:
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.vr
+
+## 29 `ANDROID_UNPLUGGED`
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.unplugged
+
+then:
+
+https://apkmirror.com/apk/google-inc/youtube-tv-watch-record-tv
+
+cost money
+
+## 30 `ANDROID_TESTSUITE`
+
+I dont know what client this is
+
+## 31 `WEB_MUSIC_ANALYTICS`
+
+I dont know what client this is
+
+## 32 `WEB_GAMING`
+
+I dont know what client this is
+
+## 33 `IOS_UNPLUGGED`
+
+I dont know how to capture this client
+
+## 34 `ANDROID_WITNESS`
+
+I dont know what client this is
+
+## 35 `IOS_WITNESS`
+
+I dont know how to capture this client
+
+## 36 `ANDROID_SPORTS`
+
+I dont know what client this is
+
+## 37 `IOS_SPORTS`
+
+I dont know how to capture this client
+
+## 38 `ANDROID_LITE`
+
+https://apkmirror.com/apk/google-inc/youtube-go
+
+discontinued:
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.mango
+
+## 39 `IOS_EMBEDDED_PLAYER`
+
+I dont know how to capture this client
+
+## 40 `IOS_DIRECTOR`
+
+I dont know how to capture this client
+
+## 41 `WEB_UNPLUGGED`
+
+cost money
+
+## 42 `WEB_EXPERIMENTS`
+
+I dont know what client this is
+
+## 43 `TVHTML5_CAST`
+
+I dont know what client this is
+
+## 53 `IOS_PILOT_STUDIO`
+
+I dont know how to capture this client
+
+## 54 `ANDROID_CASUAL`
+
+I dont know what client this is
+
+## 55 `ANDROID_EMBEDDED_PLAYER`
+
+I dont know what client this is
 
 ---------------------------------------------------------------------------------
+
+## 56 `WEB_EMBEDDED_PLAYER`
+
+~~~
+"POST /videoplayback?expire=1727672992&ei=QN75ZqTKDrWFir4PouGwsQM&ip=72.181.16.91&id=o-AK6FBIxQCus7HW2TgHvBHIKE8vNydN96Id34cPU0S2C8&itag=398&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278%2C394%2C395%2C396%2C397%2C398%2C399&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=sv&mm=31%2C29&mn=sn-q4fl6nd7%2Csn-q4flrnsk&ms=au%2Crdu&mv=m&mvi=2&pl=19&initcwndbps=1316250&bui=AXLXGFTYUcGsshWjhKtsJZhTi3tTbJPugMrR3gH3S0-Fari0-ILl59YVjEgr3hN-2XaRu_MwgBXqDJPb&spc=54MbxX2_UPBk9yneFy0AY7GQQxibd2qHhKr_bmkThUIWsIBe2A&vprv=1&svpuc=1&mime=video%2Fmp4&ns=MJkLrc4nAuIM_4Tqex96NPkQ&rqh=1&gir=yes&clen=21325632&dur=505.104&lmt=1702399840824042&mt=1727650857&fvip=1&keepalive=yes&fexp=51299152&c=WEB_EMBEDDED_PLAYER&sefc=1&txp=5537434&n=3IdgcXKvQqIliw&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIhALjoWIzjXoXoulKOGObbgnRmbPid39W1PViGLskdDFQFAiAnd-Dto8haYSdCPkwrSBKssiELF1u78JtuMjxsVqNI4g%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=ABPmVW0wRAIgXMbY3s9GnYRi-ccrGqefS3CTMynztOmBoIcNS8Oygm8CIBsI82u7tXVjY959Sw_oCT90mrY2uyAFeetGCS1hSLch&alr=yes&cpn=D7y9qkFSyUQUUUwE&cver=1.20240924.01.00&range=818405-2485498&rn=7&rbuf=18090&pot=MnQo_YviaMxQySjFTtKUPAuPFM8kCUbNoPQz72lD4D9QQxEoOtIBKxjcB-UNLG8JXfcUfFVovsH4iRc2c5gd34eMJMDGCTU4h23hkehicwolVQ5goKzHt4hjtlbBgu4n6gnY0Euoe9kFIG6UrxrJYsI5Gpk_Xw==&ump=1&srfvp=1 HTTP/1.1"
+"Host: rr2---sn-q4fl6nd7.googlevideo.com"
+"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0"
+"Accept: */*"
+"Accept-Language: en-US,en;q=0.5"
+"Accept-Encoding: gzip, deflate, br"
+"Referer: https://www.youtube.com/"
+"Content-Length: 2"
+"Origin: https://www.youtube.com"
+"DNT: 1"
+"Sec-GPC: 1"
+"Connection: keep-alive"
+"Sec-Fetch-Dest: empty"
+"Sec-Fetch-Mode: cors"
+"Sec-Fetch-Site: cross-site"
+"Pragma: no-cache"
+"Cache-Control: no-cache"
+""
+"x\x00"
+~~~
+
+---------------------------------------------------------------------------------
+
+## YouTube TV: Live TV & more
+
+~~~
+TV_UNPLUGGED_ANDROID
+~~~
+
+https://play.google.com/store/apps/details?id=com.google.android.youtube.tvunplugged
 
 ## YouTube Music for Chromebook
 
@@ -232,29 +357,6 @@ WEB_REMIX
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
 
-## YouTube TV: Live TV & more
-
-~~~
-ANDROID_UNPLUGGED
-~~~
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.unplugged
-
-~~~
-TV_UNPLUGGED_ANDROID
-~~~
-
-https://play.google.com/store/apps/details?id=com.google.android.youtube.tvunplugged
-
-## YouTube VR
-
-~~~
-ANDROID_VR
-com.google.android.apps.youtube.vr
-~~~
-
-https://apkmirror.com/apk/google-inc/youtube-vr-daydream
-
 ## YouTube Create
 
 ~~~
@@ -262,44 +364,6 @@ ANDROID_PRODUCER
 ~~~
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
-
-## YouTube Gaming
-
-~~~
-ANDROID_GAMING
-com.google.android.apps.youtube.gaming
-~~~
-
-https://apkmirror.com/apk/google-inc/youtube-gaming
-
-## YouTube Go
-
-~~~
-ANDROID_LITE
-com.google.android.apps.youtube.mango
-~~~
-
-https://apkmirror.com/apk/google-inc/youtube-go
-
-## YouTube for Fire TV
-
-~~~
-com.amazon.firetv.youtube
-~~~
-
-wont install with Android 9
-
-https://apkmirror.com/apk/google-inc/youtube-for-fire-tv
-
-## YouTube Kids for Fire TV
-
-~~~
-com.amazon.firetv.youtube.kids 
-~~~
-
-wont install even with Android 9
-
-https://apkmirror.com/apk/google-inc/youtube-kids-for-fire-tv
 
 ## YouTube Kids for Android TV
 
