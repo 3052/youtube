@@ -80,7 +80,7 @@ Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version
 
 https://www.youtube.com/tv
 
-<https://github.com/youtube/cobalt/blob/master/src/cobalt/browser/user_agent_string.cc>
+<https://github.com/youtube/cobalt/blob/25.lts.10/cobalt/browser/user_agent_string.cc>
 
 ump:
 
@@ -316,6 +316,27 @@ I dont know what client this is
 ## 56 `WEB_EMBEDDED_PLAYER`
 
 `/videoplayback` requires `pot`
+
+## 57 `TVHTML5_AUDIO`
+
+I dont know what client this is
+
+## 58 `TV_UNPLUGGED_CAST`
+
+cost money
+
+---------------------------------------------------------------------------------
+
+## 59 `TVHTML5_KIDS`
+
+~~~
+general.useragent.override
+Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version
+~~~
+
+https://www.youtubekids.com
+
+<https://github.com/youtube/cobalt/blob/25.lts.10/cobalt/browser/user_agent_string.cc>
 
 ---------------------------------------------------------------------------------
 
