@@ -332,11 +332,14 @@ cost money
 ~~~
 general.useragent.override
 Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version
+Mozilla/5.0 (Linux armeabi-v7a; Android 13) Cobalt/24.Its.40.1032940-gold
 ~~~
 
 https://www.youtubekids.com
 
 <https://github.com/youtube/cobalt/blob/25.lts.10/cobalt/browser/user_agent_string.cc>
+
+https://whatmyuseragent.com/device/xi/xiaomi-atv
 
 ---------------------------------------------------------------------------------
 
