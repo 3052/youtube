@@ -325,21 +325,23 @@ I dont know what client this is
 
 cost money
 
----------------------------------------------------------------------------------
-
 ## 59 `TVHTML5_KIDS`
 
-~~~
-general.useragent.override
-Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version
-Mozilla/5.0 (Linux armeabi-v7a; Android 13) Cobalt/24.Its.40.1032940-gold
-~~~
+I dont know what client this is
 
-https://www.youtubekids.com
+## 60 `WEB_HEROES`
 
-<https://github.com/youtube/cobalt/blob/25.lts.10/cobalt/browser/user_agent_string.cc>
+I dont know what client this is
 
-https://whatmyuseragent.com/device/xi/xiaomi-atv
+## 61 `WEB_MUSIC`
+
+I dont know what client this is
+
+## 62 `WEB_CREATOR`
+
+only returns one video option
+
+https://studio.youtube.com
 
 ---------------------------------------------------------------------------------
 
@@ -356,6 +358,10 @@ https://play.google.com/store/apps/details?id=com.google.android.youtube.tvunplu
 ~~~
 WEB_REMIX
 ~~~
+
+https://music.youtube.com
+
+or:
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
 
@@ -374,13 +380,3 @@ ANDROID_TV_KIDS
 ~~~
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
-
-## YouTube Music (Wear OS)
-
-~~~
-com.google.android.apps.musicweardemo.retailmode 
-~~~
-
-wont install
-
-https://apkmirror.com/apk/google-inc/youtube-music-wear-os-11
