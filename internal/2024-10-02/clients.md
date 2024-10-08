@@ -343,27 +343,39 @@ only returns one video option
 
 https://studio.youtube.com
 
----------------------------------------------------------------------------------
+## 63 `TV_UNPLUGGED_ANDROID`
 
-## YouTube TV: Live TV & more
-
-~~~
-TV_UNPLUGGED_ANDROID
-~~~
+cost money
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvunplugged
 
-## YouTube Music for Chromebook
+## 64 `IOS_LIVE_CREATION_EXTENSION`
 
-~~~
-WEB_REMIX
-~~~
+I dont know how to capture this client
+
+## 65 `TVHTML5_UNPLUGGED`
+
+cost money
+
+## 66 `IOS_MESSAGES_EXTENSION`
+
+I dont know how to capture this client
+
+## 67 `WEB_REMIX`
 
 https://music.youtube.com
 
 or:
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
+
+fail:
+
+~~~
+"signatureCipher": "s=%3D%3D%3DgMNosw63xQJg-J41zzo9qJJ_v9vrkEnIkzDVidlxV7bCQI..."
+~~~
+
+---------------------------------------------------------------------------------
 
 ## YouTube Create
 
