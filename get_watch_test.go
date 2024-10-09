@@ -1,7 +1,7 @@
 package youtube
 
 import (
-   "154.pages.dev/protobuf"
+   "41.neocities.org/protobuf"
    "fmt"
    "reflect"
    "testing"
