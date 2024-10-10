@@ -375,20 +375,110 @@ fail:
 "signatureCipher": "s=%3D%3D%3DgMNosw63xQJg-J41zzo9qJJ_v9vrkEnIkzDVidlxV7bCQI..."
 ~~~
 
----------------------------------------------------------------------------------
+## 68 `IOS_UPTIME`
 
-## YouTube Create
+I dont know how to capture this client
 
-~~~
-ANDROID_PRODUCER
-~~~
+## 69 `WEB_UNPLUGGED_ONBOARDING`
+
+cost money
+
+## 70 `WEB_UNPLUGGED_OPS`
+
+cost money
+
+## 71 `WEB_UNPLUGGED_PUBLIC`
+
+cost money
+
+## 72 `TVHTML5_VR`
+
+I dont know what client this is
+
+## 73 `WEB_LIVE_STREAMING`
+
+I dont know what client this is
+
+## 74 `ANDROID_TV_KIDS`
+
+https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
+
+error after capturing two requests
+
+## 75 `TVHTML5_SIMPLY`
+
+I dont know what client this is
+
+## 76 `WEB_KIDS`
+
+`/videoplayback` requires `pot`
+
+## 77 `MUSIC_INTEGRATIONS`
+
+I dont know what client this is
+
+## 80 `TVHTML5_YONGLE`
+
+I dont know what client this is
+
+## 84 `GOOGLE_ASSISTANT`
+
+I dont know what client this is
+
+## 85 `TVHTML5_SIMPLY_EMBEDDED_PLAYER`
+
+I dont know what client this is
+
+## 86 `WEB_MUSIC_EMBEDDED_PLAYER`
+
+I dont know what client this is
+
+## 87 `WEB_INTERNAL_ANALYTICS`
+
+I dont know what client this is
+
+## 88 `WEB_PARENT_TOOLS`
+
+I dont know what client this is
+
+## 89 `GOOGLE_MEDIA_ACTIONS`
+
+I dont know what client this is
+
+## 90 `WEB_PHONE_VERIFICATION`
+
+I dont know what client this is
+
+## 91 `ANDROID_PRODUCER`
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
 
-## YouTube Kids for Android TV
+unable to sign in
 
-~~~
-ANDROID_TV_KIDS
-~~~
+## 92 `IOS_PRODUCER`
 
-https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
+I dont know how to capture this client
+
+## 93 `TVHTML5_FOR_KIDS`
+
+I dont know what client this is
+
+## 94 `GOOGLE_LIST_RECS`
+
+I dont know what client this is
+
+## 95 `MEDIA_CONNECT_FRONTEND`
+
+I dont know what client this is
+
+## 98 `WEB_EFFECT_MAKER`
+
+I dont know what client this is
+
+## 99 `WEB_SHOPPING_EXTENSION`
+
+I dont know what client this is
+
+## 100 `WEB_PLAYABLES_PORTAL`
+
+I dont know what client this is
