@@ -1,8 +1,47 @@
 # clients
 
-## 0 `UNKNOWN_INTERFACE`
+## I dont know what client this is
 
-I dont know what client this is
+-   0 `UNKNOWN_INTERFACE`
+-   8 TVLITE
+-  10 TVANDROID
+-  12 CLIENTX
+-  20 `ANDROID_INSTANT`
+-  27 `MWEB_TIER_2`
+-  30 `ANDROID_TESTSUITE`
+-  31 `WEB_MUSIC_ANALYTICS`
+-  32 `WEB_GAMING`
+-  34 `ANDROID_WITNESS`
+-  36 `ANDROID_SPORTS`
+-  42 `WEB_EXPERIMENTS`
+-  43 `TVHTML5_CAST`
+-  54 `ANDROID_CASUAL`
+-  55 `ANDROID_EMBEDDED_PLAYER`
+-  57 `TVHTML5_AUDIO`
+-  59 `TVHTML5_KIDS`
+-  60 `WEB_HEROES`
+-  61 `WEB_MUSIC`
+-  72 `TVHTML5_VR`
+-  73 `WEB_LIVE_STREAMING`
+-  75 `TVHTML5_SIMPLY`
+-  77 `MUSIC_INTEGRATIONS`
+-  80 `TVHTML5_YONGLE`
+-  84 `GOOGLE_ASSISTANT`
+-  85 `TVHTML5_SIMPLY_EMBEDDED_PLAYER`
+-  86 `WEB_MUSIC_EMBEDDED_PLAYER`
+-  87 `WEB_INTERNAL_ANALYTICS`
+-  88 `WEB_PARENT_TOOLS`
+-  89 `GOOGLE_MEDIA_ACTIONS`
+-  90 `WEB_PHONE_VERIFICATION`
+-  93 `TVHTML5_FOR_KIDS`
+-  94 `GOOGLE_LIST_RECS`
+-  95 `MEDIA_CONNECT_FRONTEND`
+-  98 `WEB_EFFECT_MAKER`
+-  99 `WEB_SHOPPING_EXTENSION`
+- 100 `WEB_PLAYABLES_PORTAL`
+- 101 VISIONOS
+
+---
 
 ## 1 WEB
 
@@ -107,21 +146,9 @@ ump:
 "\b\b\xb0\t\x10\xb0\t \x01 \x88'\xda\x04\v\n\x06\b\xf0.\x10\xf0. \xf0.\xf8\x04..."
 ~~~
 
-## 8 TVLITE
-
-I dont know what client this is
-
-## 10 TVANDROID
-
-I dont know what client this is
-
 ## 11 XBOX
 
 I dont know how to capture this client
-
-## 12 CLIENTX
-
-I dont know what client this is
 
 ## 13 XBOXONEGUIDE
 
@@ -166,10 +193,6 @@ ump:
 ## 19 IOS\_KIDS
 
 I dont know how to capture this client
-
-## 20 `ANDROID_INSTANT`
-
-I dont know what client this is
 
 ## 21 `ANDROID_MUSIC`
 
@@ -219,10 +242,6 @@ I dont know how to capture this client
 
 I dont know how to capture this client
 
-## 27 MWEB\_TIER\_2
-
-I dont know what client this is
-
 ## 28 `ANDROID_VR`
 
 https://apkmirror.com/apk/google-inc/youtube-vr-daydream
@@ -241,33 +260,13 @@ https://apkmirror.com/apk/google-inc/youtube-tv-watch-record-tv
 
 cost money
 
-## 30 `ANDROID_TESTSUITE`
-
-I dont know what client this is
-
-## 31 `WEB_MUSIC_ANALYTICS`
-
-I dont know what client this is
-
-## 32 `WEB_GAMING`
-
-I dont know what client this is
-
 ## 33 `IOS_UNPLUGGED`
 
 I dont know how to capture this client
 
-## 34 `ANDROID_WITNESS`
-
-I dont know what client this is
-
 ## 35 `IOS_WITNESS`
 
 I dont know how to capture this client
-
-## 36 `ANDROID_SPORTS`
-
-I dont know what client this is
 
 ## 37 `IOS_SPORTS`
 
@@ -293,49 +292,17 @@ I dont know how to capture this client
 
 cost money
 
-## 42 `WEB_EXPERIMENTS`
-
-I dont know what client this is
-
-## 43 `TVHTML5_CAST`
-
-I dont know what client this is
-
 ## 53 `IOS_PILOT_STUDIO`
 
 I dont know how to capture this client
-
-## 54 `ANDROID_CASUAL`
-
-I dont know what client this is
-
-## 55 `ANDROID_EMBEDDED_PLAYER`
-
-I dont know what client this is
 
 ## 56 `WEB_EMBEDDED_PLAYER`
 
 `/videoplayback` requires `pot`
 
-## 57 `TVHTML5_AUDIO`
-
-I dont know what client this is
-
 ## 58 `TV_UNPLUGGED_CAST`
 
 cost money
-
-## 59 `TVHTML5_KIDS`
-
-I dont know what client this is
-
-## 60 `WEB_HEROES`
-
-I dont know what client this is
-
-## 61 `WEB_MUSIC`
-
-I dont know what client this is
 
 ## 62 `WEB_CREATOR`
 
@@ -391,63 +358,15 @@ cost money
 
 cost money
 
-## 72 `TVHTML5_VR`
-
-I dont know what client this is
-
-## 73 `WEB_LIVE_STREAMING`
-
-I dont know what client this is
-
 ## 74 `ANDROID_TV_KIDS`
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
 
 error after capturing two requests
 
-## 75 `TVHTML5_SIMPLY`
-
-I dont know what client this is
-
 ## 76 `WEB_KIDS`
 
 `/videoplayback` requires `pot`
-
-## 77 `MUSIC_INTEGRATIONS`
-
-I dont know what client this is
-
-## 80 `TVHTML5_YONGLE`
-
-I dont know what client this is
-
-## 84 `GOOGLE_ASSISTANT`
-
-I dont know what client this is
-
-## 85 `TVHTML5_SIMPLY_EMBEDDED_PLAYER`
-
-I dont know what client this is
-
-## 86 `WEB_MUSIC_EMBEDDED_PLAYER`
-
-I dont know what client this is
-
-## 87 `WEB_INTERNAL_ANALYTICS`
-
-I dont know what client this is
-
-## 88 `WEB_PARENT_TOOLS`
-
-I dont know what client this is
-
-## 89 `GOOGLE_MEDIA_ACTIONS`
-
-I dont know what client this is
-
-## 90 `WEB_PHONE_VERIFICATION`
-
-I dont know what client this is
 
 ## 91 `ANDROID_PRODUCER`
 
@@ -459,30 +378,3 @@ unable to sign in
 
 I dont know how to capture this client
 
-## 93 `TVHTML5_FOR_KIDS`
-
-I dont know what client this is
-
-## 94 `GOOGLE_LIST_RECS`
-
-I dont know what client this is
-
-## 95 `MEDIA_CONNECT_FRONTEND`
-
-I dont know what client this is
-
-## 98 `WEB_EFFECT_MAKER`
-
-I dont know what client this is
-
-## 99 `WEB_SHOPPING_EXTENSION`
-
-I dont know what client this is
-
-## 100 `WEB_PLAYABLES_PORTAL`
-
-I dont know what client this is
-
-## 101 VISIONOS
-
-I dont know what client this is
