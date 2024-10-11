@@ -482,3 +482,7 @@ I dont know what client this is
 ## 100 `WEB_PLAYABLES_PORTAL`
 
 I dont know what client this is
+
+## 101 VISIONOS
+
+I dont know what client this is
