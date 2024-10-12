@@ -126,11 +126,8 @@ https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
 
-## only returns one video option
 
-62 `WEB_CREATOR`:
 
-https://studio.youtube.com
 
 ## signatureCipher
 
@@ -276,3 +273,9 @@ https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.mu
 ""
 "\n6\x88\x01t\x90\x01\xa0\x06\x98\x01\xa0\x06\xb0\x01\x01\xb8\x01\x96\xfe\x97..."
 ~~~
+
+## You must be signed in to perform this operation
+
+62 `WEB_CREATOR`:
+
+https://studio.youtube.com
