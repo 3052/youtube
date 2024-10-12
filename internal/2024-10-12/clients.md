@@ -18,6 +18,20 @@
 - 70 `WEB_UNPLUGGED_OPS`
 - 71 `WEB_UNPLUGGED_PUBLIC`
 
+## discontinued
+
+24 `ANDROID_GAMING`:
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.gaming
+
+28 `ANDROID_VR`:
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.vr
+
+38 `ANDROID_LITE`:
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.mango
+
 ## I dont know how to capture this client
 
 -  5 IOS
@@ -82,11 +96,67 @@
 - 100 `WEB_PLAYABLES_PORTAL`
 - 101 VISIONOS
 
----
+## if you try to play a video it just opens another app
 
-## 1 WEB
+14 `ANDROID_CREATOR`:
 
-ump:
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator
+
+## MITM fail
+
+23 `ANDROID_TV`:
+
+https://play.google.com/store/apps/details?id=com.google.android.youtube.tv
+
+74 `ANDROID_TV_KIDS`:
+
+https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
+
+91 `ANDROID_PRODUCER`:
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
+
+## only returns one video option
+
+62 `WEB_CREATOR`:
+
+https://studio.youtube.com
+
+## signatureCipher
+
+2 MWEB:
+
+~~~
+general.useragent.override
+~~~
+
+https://whatismybrowser.com/guides/how-to-change-your-user-agent/firefox
+
+then:
+
+https://m.youtube.com/watch?v=KwRxeZ9Ro24
+
+~~~
+"signatureCipher": "s=%3D%3D%3DgMNosw63xQJg-J41zzo9qJJ_v9vrkEnIkzDVidlxV7bCQI..."
+~~~
+
+67 `WEB_REMIX`:
+
+https://music.youtube.com
+
+or:
+
+https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
+
+fail:
+
+~~~
+"signatureCipher": "s=%3D%3D%3DgMNosw63xQJg-J41zzo9qJJ_v9vrkEnIkzDVidlxV7bCQI..."
+~~~
+
+## ump
+
+1 WEB:
 
 ~~~
 "POST /videoplayback?expire=1727646217&ei=qXX5ZtvPEv2Z2_gPjerBuQg&ip=72.181.16.91&id=o-AOjx3hN1pSaRRd3_PIAj40DuwR1fxvZ5WFVqdLSpc0R8&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=am&mm=31%2C29&mn=sn-q4fl6n66%2Csn-q4flrn7y&ms=au%2Crdu&mv=m&mvi=1&pl=19&initcwndbps=1088750&spc=54MbxcPragR4oT0P2DMgTIiq-YEXZD2NztrO5K-ISHw6gs-5S0Bh58rgKJCH&svpuc=1&ns=1t-Z2QnTKpGR6CZCglhNWvMQ&sabr=1&rqh=1&mt=1727624226&fvip=2&keepalive=yes&fexp=51299152&c=WEB&n=78_onccMq-WDBw&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AJfQdSswRAIgJyZWdWRfpdJmRVhZduPvhaxi5DYr0Gp427j1_wwMDQMCICXlvg1Cxnbf4ydySG0I6N9AWuuKQyWbLvfdC0NZmCWI&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=ABPmVW0wRQIhAP2cVPxzbOFWNxXuJiDTq1kTPhTMCq8vuaUGvc5A1w73AiBYGMOlenrh--07zMjL5N9Zn9yN-aEmg1G_XB_Qgz5ErA%3D%3D&cpn=0I5Kau1O22UZFNbW&cver=2.20240926.00.00&rn=1 HTTP/1.1"
@@ -111,27 +181,7 @@ ump:
 "\b\b\xb0\t\x10\xb0\t \x01 \x88'\xda\x04\v\n\x06\b\xf0.\x10\xf0. \xf0.\xf8..."
 ~~~
 
-## 2 MWEB
-
-~~~
-general.useragent.override
-~~~
-
-https://whatismybrowser.com/guides/how-to-change-your-user-agent/firefox
-
-then:
-
-https://m.youtube.com/watch?v=KwRxeZ9Ro24
-
-fail:
-
-~~~
-"signatureCipher": "s=%3D%3D%3DgMNosw63xQJg-J41zzo9qJJ_v9vrkEnIkzDVidlxV7bCQI..."
-~~~
-
-## 3 ANDROID
-
-ump:
+3 ANDROID:
 
 ~~~
 "POST /videoplayback?expire=1724652395&ei=CsfLZoO2O4rkir4P0taY8Q0&ip=72.181.16.91&id=o-ACCjhjANFZlVfaNe1JZwKleNFPNIbmQuWMovDELsK8X6&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=IN&mm=31%2C26&mn=sn-q4fl6n6y%2Csn-a5mlrnlz&ms=au%2Conr&mv=m&mvi=1&pl=23&initcwndbps=1342500&spc=Mv1m9kC_OK5E_6M6kNGwgFszAnm4Jv2jE_OMHDkzv40Y1AC2U3IrojBc8A&svpuc=1&sabr=1&rqh=1&mt=1724630451&fvip=3&keepalive=yes&c=ANDROID&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cspc%2Csvpuc%2Csabr%2Crqh&sig=AJfQdSswRQIgJ4OQfR9D-q0hAxvOPzUeyGZsH6byIPIob-O_71y7GAYCIQClzAXUSGu0JU2-0LuEvB9CJwfrdoVXDivGzgxG2ATARA%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AGtxev0wRAIgPl3jlEueiwtDrep2WhsrCA_MlA6uhSGCpbdaid95p7ICIB4Ta9RzhuoievlP9_rnwcu1N_VosN8qnxzr_H_rYyoA&cpn=Wlf_0-AoX2uquEvg&rn=6 HTTP/1.1"
@@ -147,18 +197,16 @@ ump:
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube
 
-## 7 TVHTML5
+7 TVHTML5:
 
 ~~~
 general.useragent.override
 Mozilla/5.0 (ChromiumStylePlatform) Cobalt/Version
 ~~~
 
-https://www.youtube.com/tv
-
 <https://github.com/youtube/cobalt/blob/25.lts.10/cobalt/browser/user_agent_string.cc>
 
-ump:
+https://www.youtube.com/tv
 
 ~~~
 "POST /videoplayback?expire=1727768530&ei=clP7ZpWkN5G2ir4PismO8Qc&ip=72.181.16.91&id=o-AIaY6w_YnVWWgJC83fAateS4FhWoClal5hEFgx1hazxI&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=vE&mm=31%2C26&mn=sn-q4fl6nss%2Csn-a5mekndl&ms=au%2Conr&mv=m&mvi=4&pl=19&pcm2=no&gcr=us&initcwndbps=1048750&svpuc=1&ns=VWS3EmKFn86onDqTKK_8K2EQ&sabr=1&rqh=1&mt=1727746616&fvip=3&keepalive=yes&fexp=51299152%2C51300761&c=TVHTML5&n=Z_evkyL-2Vjd0w&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cpcm2%2Cgcr%2Csvpuc%2Cns%2Csabr%2Crqh&sig=AJfQdSswRQIgcCDKJ8lEzv18FDjCPrsN-QMJY8JIuaRI0SYwA7WSIqQCIQCnG-B6Ma1BREzaHxGRDqfE4yjUS-Nv5xgjLKibiOc0WQ%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=ABPmVW0wRgIhAMOfKRjcpdSx-s4IPGdxxx5sD5anG851b1xqvhJLKeMqAiEA8MM7gBWCLPHUKYWWQDJovARdR3UpK_tRY6JXIvrelFk%3D&cpn=BHPZePgvGfCR30N0&cver=7.20240929.15.00&rn=1 HTTP/1.1"
@@ -183,17 +231,9 @@ ump:
 "\b\b\xb0\t\x10\xb0\t \x01 \x88'\xda\x04\v\n\x06\b\xf0.\x10\xf0. \xf0.\xf8\x04..."
 ~~~
 
-## 14 `ANDROID_CREATOR`
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.creator
-
-if you try to play a video it just opens another app
-
-## 18 `ANDROID_KIDS`
+18 `ANDROID_KIDS`:
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids
-
-ump:
 
 ~~~
 "POST /videoplayback?expire=1727930103&ei=l8r9ZsyPOe3IzN0PkM6Y8AM&ip=72.181.16.91&id=o-AEMRc2lRRCIZLPL7Z7Ie8AVo-EJPYum9veez0urzNGxb&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=rj&mm=31%2C26&mn=sn-q4flrnsk%2Csn-a5meknde&ms=au%2Conr&mv=m&mvi=4&pl=19&pcm2=yes&initcwndbps=1233750&svpuc=1&sabr=1&rqh=1&mt=1727908136&fvip=5&keepalive=yes&fexp=51300760&c=ANDROID_KIDS&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cpcm2%2Csvpuc%2Csabr%2Crqh&sig=AJfQdSswRQIhAIUd41mWRwIfm3QuETiyxZTxpxw5cYaPp1ZtHp31n2oWAiBCoTpA0IJkBesHwb9sbUfYh57_ImHFAY0gDzFfgtrRGg%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=ABPmVW0wRQIgRl8U-S70jy-IOS7l4q6a_RUNvdtYT9Is7iJA7gZN74ECIQCSg5SY3bA9V9m8zfCQIpAjiqQGoL2sHbN3-b1Vgm7EpA%3D%3D&cpn=ipy1CXXvnPS9vgJv&rn=2 HTTP/1.1"
@@ -207,15 +247,13 @@ ump:
 "\n6\x88\x01t\x90\x01\xff\x0e\x98\x01\xb8\b\xb0\x01\x00\xb8\x01\xb4\xa0\x81\x..."
 ~~~
 
-## 21 `ANDROID_MUSIC`
+21 `ANDROID_MUSIC`:
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvmusic
 
 wont run on virtual device, even with proxy disabled. tried Android 9
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music
-
-ump:
 
 ~~~
 "POST /videoplayback?expire=1727931210&ei=6s79ZpvJFqK0ir4PyryJmA0&ip=72.181.16.91&id=o-AE-D7jiwQnqG9sPkd2KltnaNQGlKvYSwPGQGwGGJwBeg&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&mh=xj&mm=31%2C26&mn=sn-q4flrnez%2Csn-a5mlrnll&ms=au%2Conr&mv=m&mvi=4&pl=19&ctier=A&pfa=5&gcr=us&initcwndbps=1240000&hightc=yes&siu=1&spc=54MbxQu13pamnn0c5dd1KqWEh1ljwnnODzH8clzS8HZW2LTzMM9IA_pvKWvh&svpuc=1&sabr=1&rqh=1&mt=1727909099&fvip=5&keepalive=yes&fexp=51300760&c=ANDROID_MUSIC&sparams=expire%2Cei%2Cip%2Cid%2Csource%2Crequiressl%2Cxpc%2Cctier%2Cpfa%2Cgcr%2Chightc%2Csiu%2Cspc%2Csvpuc%2Csabr%2Crqh&sig=AJfQdSswRQIhAL-RAWRbUt3wXuh9nWCQZJh4m0h1xTHbwZxqz-Q2NcFaAiBDnOkVsM508tRUsvTGD_BjRKpVGwvmkcKsjWlYIQn2eQ%3D%3D&lsparams=mh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=ABPmVW0wRQIhAIfAnsyd2FcfZ4nSkWELEzQrY6t8PEX0gmFdQBXE39u6AiAjSnVzcVZR98q--aAVYG3auWe10Ggp4GeVA_WtxQyZWw%3D%3D&cpn=UBoejYYSjpWH11j-&rn=12 HTTP/1.1"
@@ -228,65 +266,3 @@ ump:
 ""
 "\n6\x88\x01t\x90\x01\xa0\x06\x98\x01\xa0\x06\xb0\x01\x01\xb8\x01\x96\xfe\x97..."
 ~~~
-
-## 23 `ANDROID_TV`
-
-https://play.google.com/store/apps/details?id=com.google.android.youtube.tv
-
-error after capturing two requests
-
-## 24 `ANDROID_GAMING`
-
-https://apkmirror.com/apk/google-inc/youtube-gaming
-
-discontinued:
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.gaming
-
-## 28 `ANDROID_VR`
-
-https://apkmirror.com/apk/google-inc/youtube-vr-daydream
-
-discontinued:
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.vr
-
-## 38 `ANDROID_LITE`
-
-https://apkmirror.com/apk/google-inc/youtube-go
-
-discontinued:
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.mango
-
-## 62 `WEB_CREATOR`
-
-only returns one video option
-
-https://studio.youtube.com
-
-## 67 `WEB_REMIX`
-
-https://music.youtube.com
-
-or:
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music.pwa
-
-fail:
-
-~~~
-"signatureCipher": "s=%3D%3D%3DgMNosw63xQJg-J41zzo9qJJ_v9vrkEnIkzDVidlxV7bCQI..."
-~~~
-
-## 74 `ANDROID_TV_KIDS`
-
-https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
-
-error after capturing two requests
-
-## 91 `ANDROID_PRODUCER`
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
-
-unable to sign in
