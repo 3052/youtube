@@ -1,10 +1,45 @@
 # clients
 
+## `/videoplayback` requires `pot`
+
+- 56 `WEB_EMBEDDED_PLAYER`
+- 76 `WEB_KIDS`
+
+## cost money
+
+- 29 `ANDROID_UNPLUGGED`
+   - https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.unplugged
+- 41 `WEB_UNPLUGGED`
+- 58 `TV_UNPLUGGED_CAST`
+- 63 `TV_UNPLUGGED_ANDROID`
+   - https://play.google.com/store/apps/details?id=com.google.android.youtube.tvunplugged
+- 65 `TVHTML5_UNPLUGGED`
+- 69 `WEB_UNPLUGGED_ONBOARDING`
+- 70 `WEB_UNPLUGGED_OPS`
+- 71 `WEB_UNPLUGGED_PUBLIC`
+
 ## I dont know how to capture this client
 
 -  5 IOS
 - 11 XBOX
 - 13 XBOXONEGUIDE
+- 15 `IOS_CREATOR`
+- 16 TVAPPLE
+- 17 `IOS_INSTANT`
+- 19 `IOS_KIDS`
+- 22 `IOS_TABLOID`
+- 25 `IOS_GAMING`
+- 26 `IOS_MUSIC`
+- 33 `IOS_UNPLUGGED`
+- 35 `IOS_WITNESS`
+- 37 `IOS_SPORTS`
+- 39 `IOS_EMBEDDED_PLAYER`
+- 40 `IOS_DIRECTOR`
+- 53 `IOS_PILOT_STUDIO`
+- 64 `IOS_LIVE_CREATION_EXTENSION`
+- 66 `IOS_MESSAGES_EXTENSION`
+- 68 `IOS_UPTIME`
+- 92 `IOS_PRODUCER`
 
 ## I dont know what client this is
 
@@ -154,18 +189,6 @@ https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.cr
 
 if you try to play a video it just opens another app
 
-## 15 `IOS_CREATOR`
-
-I dont know how to capture this client
-
-## 16 TVAPPLE
-
-I dont know how to capture this client
-
-## 17 IOS\_INSTANT
-
-I dont know how to capture this client
-
 ## 18 `ANDROID_KIDS`
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.kids
@@ -183,10 +206,6 @@ ump:
 ""
 "\n6\x88\x01t\x90\x01\xff\x0e\x98\x01\xb8\b\xb0\x01\x00\xb8\x01\xb4\xa0\x81\x..."
 ~~~
-
-## 19 IOS\_KIDS
-
-I dont know how to capture this client
 
 ## 21 `ANDROID_MUSIC`
 
@@ -210,10 +229,6 @@ ump:
 "\n6\x88\x01t\x90\x01\xa0\x06\x98\x01\xa0\x06\xb0\x01\x01\xb8\x01\x96\xfe\x97..."
 ~~~
 
-## 22 IOS\_TABLOID
-
-I dont know how to capture this client
-
 ## 23 `ANDROID_TV`
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tv
@@ -228,14 +243,6 @@ discontinued:
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.gaming
 
-## 25 IOS\_GAMING
-
-I dont know how to capture this client
-
-## 26 IOS\_MUSIC
-
-I dont know how to capture this client
-
 ## 28 `ANDROID_VR`
 
 https://apkmirror.com/apk/google-inc/youtube-vr-daydream
@@ -243,28 +250,6 @@ https://apkmirror.com/apk/google-inc/youtube-vr-daydream
 discontinued:
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.vr
-
-## 29 `ANDROID_UNPLUGGED`
-
-https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.unplugged
-
-then:
-
-https://apkmirror.com/apk/google-inc/youtube-tv-watch-record-tv
-
-cost money
-
-## 33 `IOS_UNPLUGGED`
-
-I dont know how to capture this client
-
-## 35 `IOS_WITNESS`
-
-I dont know how to capture this client
-
-## 37 `IOS_SPORTS`
-
-I dont know how to capture this client
 
 ## 38 `ANDROID_LITE`
 
@@ -274,53 +259,11 @@ discontinued:
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.mango
 
-## 39 `IOS_EMBEDDED_PLAYER`
-
-I dont know how to capture this client
-
-## 40 `IOS_DIRECTOR`
-
-I dont know how to capture this client
-
-## 41 `WEB_UNPLUGGED`
-
-cost money
-
-## 53 `IOS_PILOT_STUDIO`
-
-I dont know how to capture this client
-
-## 56 `WEB_EMBEDDED_PLAYER`
-
-`/videoplayback` requires `pot`
-
-## 58 `TV_UNPLUGGED_CAST`
-
-cost money
-
 ## 62 `WEB_CREATOR`
 
 only returns one video option
 
 https://studio.youtube.com
-
-## 63 `TV_UNPLUGGED_ANDROID`
-
-cost money
-
-https://play.google.com/store/apps/details?id=com.google.android.youtube.tvunplugged
-
-## 64 `IOS_LIVE_CREATION_EXTENSION`
-
-I dont know how to capture this client
-
-## 65 `TVHTML5_UNPLUGGED`
-
-cost money
-
-## 66 `IOS_MESSAGES_EXTENSION`
-
-I dont know how to capture this client
 
 ## 67 `WEB_REMIX`
 
@@ -336,39 +279,14 @@ fail:
 "signatureCipher": "s=%3D%3D%3DgMNosw63xQJg-J41zzo9qJJ_v9vrkEnIkzDVidlxV7bCQI..."
 ~~~
 
-## 68 `IOS_UPTIME`
-
-I dont know how to capture this client
-
-## 69 `WEB_UNPLUGGED_ONBOARDING`
-
-cost money
-
-## 70 `WEB_UNPLUGGED_OPS`
-
-cost money
-
-## 71 `WEB_UNPLUGGED_PUBLIC`
-
-cost money
-
 ## 74 `ANDROID_TV_KIDS`
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube.tvkids
 
 error after capturing two requests
 
-## 76 `WEB_KIDS`
-
-`/videoplayback` requires `pot`
-
 ## 91 `ANDROID_PRODUCER`
 
 https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.producer
 
 unable to sign in
-
-## 92 `IOS_PRODUCER`
-
-I dont know how to capture this client
-
