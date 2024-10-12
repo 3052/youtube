@@ -1,5 +1,11 @@
 # clients
 
+## I dont know how to capture this client
+
+-  5 IOS
+- 11 XBOX
+- 13 XBOXONEGUIDE
+
 ## I dont know what client this is
 
 -   0 `UNKNOWN_INTERFACE`
@@ -106,10 +112,6 @@ ump:
 
 https://play.google.com/store/apps/details?id=com.google.android.youtube
 
-## 5 IOS
-
-I dont know how to capture this client
-
 ## 7 TVHTML5
 
 ~~~
@@ -145,14 +147,6 @@ ump:
 "\n\xa3\x80\x00\x90\x01\xc5\v\x98\x01\x93\x06\xa8\x01\x00\xe0\x01\x00\x90\x02..."
 "\b\b\xb0\t\x10\xb0\t \x01 \x88'\xda\x04\v\n\x06\b\xf0.\x10\xf0. \xf0.\xf8\x04..."
 ~~~
-
-## 11 XBOX
-
-I dont know how to capture this client
-
-## 13 XBOXONEGUIDE
-
-I dont know how to capture this client
 
 ## 14 `ANDROID_CREATOR`
 
