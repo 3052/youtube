@@ -1,5 +1,15 @@
 # clients
 
+this is what we need to swap:
+
+~~~
+"user-agent", "com.google.android.youtube/19.33.35"
+
+"androidSdkVersion": 32,
+"clientName": "ANDROID",
+"clientVersion": "19.33.35",
+~~~
+
 ## 2 MWEB
 
 ~~~
@@ -230,3 +240,25 @@ te: trailers
 ~~~
 
 `/videoplayback` requires `pot`
+
+~~~
+"POST /videoplayback?expire=1728548344&ei=mDkHZ6HwE5jdir4PrMuPqQU&ip=72.181.16.91&id=o-ALOC4ekAwD5ySZRUeRZ6t-9VAnR9rQaNiA0-RCH4TaeO&itag=247&source=youtube&requiressl=yes&xpc=EgVo2aDSNQ%3D%3D&met=1728526744%2C&mh=UA&mm=31%2C26&mn=sn-q4fl6nsk%2Csn-a5msener&ms=au%2Conr&mv=m&mvi=4&pl=15&rms=au%2Cau&initcwndbps=1076250&bui=AXLXGFR1UEusC0hBFMEh_V5cBR0_IWihJvw9KF6Iay9YHEVIr_BYBMC2bByY0tb2k2EON3smoBxwTR1l&spc=54Mbxbjf72_qkOb2rVC2vLHpwsUNSURBtT9jq3PYB-KuFTY&vprv=1&svpuc=1&mime=video%2Fwebm&ns=OlQG491wW4H_KmQrTqj3e1UQ&rqh=1&gir=yes&clen=3024066&dur=25.624&lmt=1627866634392875&mt=1728526375&fvip=3&keepalive=yes&fexp=51300760&c=WEB_KIDS&sefc=1&txp=5311222&n=7Xyz9NDGE0qEAg&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cxpc%2Cbui%2Cspc%2Cvprv%2Csvpuc%2Cmime%2Cns%2Crqh%2Cgir%2Cclen%2Cdur%2Clmt&sig=AJfQdSswRQIgdmCIotveaPxtpoXHYLDACefjjZWR-XfHPpcN_IHJ96YCIQDMKQ8iMuwicrnHDp3UlhfP9g7EDIB3eXi77RT7hoOhgg%3D%3D&lsparams=met%2Cmh%2Cmm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Crms%2Cinitcwndbps&lsig=ACJ0pHgwRAIgaatzf51RGNRj34_fMNhia_P7ex0wuZXPNihC5dVow8YCIGirDSjWZn3Y86Q54ulJz5cVUV4mmxokSa3D989WHznH&alr=yes&cpn=0eKwnZpF-2wk5_kX&cver=2.20241008.10.00&range=1060327-2806703&rn=8&rbuf=9787&pot=MnTUecr0tGyhO9RBXjlIHg11IaazYokFrmFbfGrPVJFIuI87DrRSpDy9AlzCqJIfXtv0lDvWUWVGoyJdgJRifg_1DrhFnUZ28s_3YqXXv3Guez_-M-ILxKYEdH97eYBHDlMowuyhJnbxXWWnH8M82V6_3ktgmA==&ump=1&srfvp=1 HTTP/1.1"
+"Host: rr4---sn-q4fl6nsk.googlevideo.com"
+"User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0"
+"Accept: */*"
+"Accept-Language: en-US,en;q=0.5"
+"Accept-Encoding: gzip, deflate, br"
+"Referer: https://www.youtubekids.com/"
+"Content-Length: 2"
+"Origin: https://www.youtubekids.com"
+"DNT: 1"
+"Sec-GPC: 1"
+"Connection: keep-alive"
+"Sec-Fetch-Dest: empty"
+"Sec-Fetch-Mode: cors"
+"Sec-Fetch-Site: cross-site"
+"Pragma: no-cache"
+"Cache-Control: no-cache"
+""
+"x\x00"
+~~~
